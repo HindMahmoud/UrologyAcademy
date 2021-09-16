@@ -1,0 +1,1516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EccoHospitalCopyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Acc_save">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="in_value" Type="float" />
+    <Property Name="out_value" Type="float" />
+    <Property Name="balance" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_acc_id" Type="int" />
+    <Property Name="paylist_id" Type="int" />
+    <Property Name="item_id" Type="int" />
+  </EntityType>
+  <EntityType Name="activation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="day" Type="nvarchar" MaxLength="50" />
+    <Property Name="HMG" Type="nvarchar" MaxLength="50" />
+    <Property Name="FSH" Type="nvarchar" MaxLength="50" />
+    <Property Name="RT1" Type="nvarchar" MaxLength="50" />
+    <Property Name="RT2" Type="nvarchar" MaxLength="50" />
+    <Property Name="RT3" Type="nvarchar" MaxLength="50" />
+    <Property Name="RT4" Type="nvarchar" MaxLength="50" />
+    <Property Name="LT1" Type="nvarchar" MaxLength="50" />
+    <Property Name="LT2" Type="nvarchar" MaxLength="50" />
+    <Property Name="LT3" Type="nvarchar" MaxLength="50" />
+    <Property Name="LT4" Type="nvarchar" MaxLength="50" />
+    <Property Name="End_thickness" Type="nvarchar" MaxLength="50" />
+    <Property Name="End_pattern" Type="nvarchar" MaxLength="50" />
+    <Property Name="E2" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="add_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="add_id" Type="int" />
+    <Property Name="add_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="add_value" Type="float" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="emp_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="addition">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="value" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+  </EntityType>
+  <EntityType Name="bank">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="account_num" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="bank_balance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="in_val" Type="float" />
+    <Property Name="out_val" Type="float" />
+    <Property Name="inc_id" Type="int" />
+    <Property Name="pay_id" Type="int" />
+    <Property Name="bank_id" Type="int" />
+    <Property Name="bank_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="clinic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price1" Type="float" />
+    <Property Name="price2" Type="float" />
+    <Property Name="price3" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="clinic_reception">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="doctor_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="number" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="datenow" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="status" Type="bit" />
+    <Property Name="check_out" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ticketId" Type="int" />
+    <Property Name="Diagnosis" Type="nvarchar" MaxLength="100" />
+    <Property Name="Complaint" Type="nvarchar(max)" />
+    <Property Name="note" Type="nvarchar" MaxLength="150" />
+    <Property Name="printFlag" Type="bit" />
+    <Property Name="UUTS" Type="bit" />
+    <Property Name="LUTS" Type="bit" />
+    <Property Name="ED" Type="bit" />
+    <Property Name="Emergency" Type="bit" />
+    <Property Name="others" Type="bit" />
+    <Property Name="cong" Type="bit" />
+    <Property Name="post_mi" Type="bit" />
+    <Property Name="voidus" Type="bit" />
+  </EntityType>
+  <EntityType Name="clinic_time">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fromm" Type="time" Precision="7" />
+    <Property Name="too" Type="time" Precision="7" />
+    <Property Name="day" Type="nvarchar" MaxLength="50" />
+    <Property Name="day_num" Type="int" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="clinic_id" Type="int" />
+    <Property Name="clinic_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="percentage" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="cong_Anthio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UUT" Type="bit" />
+    <Property Name="LUT" Type="bit" />
+    <Property Name="Hypospodias" Type="bit" />
+    <Property Name="Epispadias" Type="bit" />
+    <Property Name="undescTesties" Type="bit" />
+    <Property Name="others" Type="nvarchar(max)" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="departments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DepStock">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="depid" Type="int" />
+    <Property Name="dep_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="prod_id" Type="int" />
+    <Property Name="prod_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="destroy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="med_id" Type="int" />
+    <Property Name="med_code" Type="nvarchar" MaxLength="50" />
+    <Property Name="med_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="import_id" Type="int" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="expirdate" Type="datetime" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="datenow" Type="datetime" />
+    <Property Name="sources" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="device">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="device_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surgery_id" Type="int" />
+    <Property Name="device_id" Type="int" />
+    <Property Name="device_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+  </EntityType>
+  <EntityType Name="doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="T_perc" Type="float" />
+    <Property Name="F_perc" Type="float" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="doctor_account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="in_val" Type="float" />
+    <Property Name="out_val" Type="float" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="p_historyID" Type="int" />
+  </EntityType>
+  <EntityType Name="doctor_services">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="serviceId" Type="int" />
+    <Property Name="doctorId" Type="int" />
+    <Property Name="pricce" Type="float" />
+  </EntityType>
+  <EntityType Name="ED">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDISS" Type="nvarchar(max)" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Emagercy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ret" Type="bit" />
+    <Property Name="anuria" Type="bit" />
+    <Property Name="uiy_Hydronc" Type="bit" />
+    <Property Name="Ueeuia" Type="bit" />
+    <Property Name="pria_pism" Type="bit" />
+    <Property Name="Torsion" Type="bit" />
+    <Property Name="Gaugleue" Type="bit" />
+    <Property Name="inFlection" Type="bit" />
+    <Property Name="Trauua" Type="bit" />
+    <Property Name="other" Type="nvarchar(max)" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Exammination">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="General" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kiduey" Type="nvarchar" MaxLength="50" />
+    <Property Name="uerter" Type="nvarchar" MaxLength="50" />
+    <Property Name="Blodder" Type="nvarchar" MaxLength="50" />
+    <Property Name="oeuis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ureqra" Type="nvarchar" MaxLength="50" />
+    <Property Name="peruerum" Type="nvarchar" MaxLength="50" />
+    <Property Name="scrotcum" Type="nvarchar" MaxLength="50" />
+    <Property Name="uretiva" Type="nvarchar" MaxLength="50" />
+    <Property Name="P/R" Type="nvarchar" MaxLength="50" />
+    <Property Name="prostate" Type="nvarchar" MaxLength="50" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Family_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patientId" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diabets" Type="bit" />
+    <Property Name="Hypiteusini" Type="bit" />
+    <Property Name="coucel" Type="bit" />
+    <Property Name="coucer_prostat" Type="bit" />
+    <Property Name="statues" Type="bit" />
+    <Property Name="Medical_equal_diseases" Type="bit" />
+    <Property Name="other" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="finger">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="photoNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="enrollNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="verifyMode" Type="nvarchar" MaxLength="255" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="date2" Type="datetime" />
+    <Property Name="date1" Type="datetime" />
+    <Property Name="hourNum" Type="float" />
+    <Property Name="shortmin" Type="float" />
+    <Property Name="extramin" Type="float" />
+    <Property Name="shorth" Type="float" />
+    <Property Name="extrah" Type="float" />
+  </EntityType>
+  <EntityType Name="frozen_embryo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="d1" Type="nvarchar" MaxLength="50" />
+    <Property Name="d2" Type="nvarchar" MaxLength="50" />
+    <Property Name="d3" Type="nvarchar" MaxLength="50" />
+    <Property Name="d4" Type="nvarchar" MaxLength="50" />
+    <Property Name="d5" Type="nvarchar" MaxLength="50" />
+    <Property Name="d6" Type="nvarchar" MaxLength="50" />
+    <Property Name="d7" Type="nvarchar" MaxLength="50" />
+    <Property Name="d8" Type="nvarchar" MaxLength="50" />
+    <Property Name="d9" Type="nvarchar" MaxLength="50" />
+    <Property Name="d10" Type="nvarchar" MaxLength="50" />
+    <Property Name="d11" Type="nvarchar" MaxLength="50" />
+    <Property Name="d12" Type="nvarchar" MaxLength="50" />
+    <Property Name="d13" Type="nvarchar" MaxLength="50" />
+    <Property Name="d14" Type="nvarchar" MaxLength="50" />
+    <Property Name="d15" Type="nvarchar" MaxLength="50" />
+    <Property Name="d16" Type="nvarchar" MaxLength="50" />
+    <Property Name="d17" Type="nvarchar" MaxLength="50" />
+    <Property Name="d18" Type="nvarchar" MaxLength="50" />
+    <Property Name="d19" Type="nvarchar" MaxLength="50" />
+    <Property Name="d20" Type="nvarchar" MaxLength="50" />
+    <Property Name="d21" Type="nvarchar" MaxLength="50" />
+    <Property Name="d22" Type="nvarchar" MaxLength="50" />
+    <Property Name="date1" Type="nvarchar" MaxLength="50" />
+    <Property Name="date2" Type="nvarchar" MaxLength="50" />
+    <Property Name="date3" Type="nvarchar" MaxLength="50" />
+    <Property Name="es1" Type="nvarchar" MaxLength="50" />
+    <Property Name="es2" Type="nvarchar" MaxLength="50" />
+    <Property Name="es3" Type="nvarchar" MaxLength="50" />
+    <Property Name="en1" Type="nvarchar" MaxLength="50" />
+    <Property Name="en2" Type="nvarchar" MaxLength="50" />
+    <Property Name="en3" Type="nvarchar" MaxLength="50" />
+    <Property Name="in1" Type="nvarchar" MaxLength="50" />
+    <Property Name="in2" Type="nvarchar" MaxLength="50" />
+    <Property Name="in3" Type="nvarchar" MaxLength="50" />
+    <Property Name="preg" Type="nvarchar" MaxLength="50" />
+    <Property Name="preg_date" Type="nvarchar" MaxLength="50" />
+    <Property Name="comment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="hystroscopy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="Patserv_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="clinic_diag" Type="nvarchar" MaxLength="50" />
+    <Property Name="uterin_sounding" Type="nvarchar" MaxLength="50" />
+    <Property Name="intro" Type="nvarchar" MaxLength="50" />
+    <Property Name="uterin_cavity" Type="nvarchar" MaxLength="255" />
+    <Property Name="endometrium" Type="nvarchar" MaxLength="255" />
+    <Property Name="tubal" Type="nvarchar" MaxLength="50" />
+    <Property Name="distention" Type="nvarchar" MaxLength="50" />
+    <Property Name="diag" Type="nvarchar" MaxLength="255" />
+    <Property Name="paln" Type="nvarchar" MaxLength="255" />
+    <Property Name="operative_notes" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="icsi_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="protocol" Type="nvarchar" MaxLength="50" />
+    <Property Name="drugs" Type="nvarchar" MaxLength="50" />
+    <Property Name="period" Type="nvarchar" MaxLength="50" />
+    <Property Name="comment" Type="nvarchar" MaxLength="255" />
+    <Property Name="hcg" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc" Type="nvarchar" MaxLength="50" />
+    <Property Name="pr" Type="nvarchar" MaxLength="50" />
+    <Property Name="np" Type="nvarchar" MaxLength="50" />
+    <Property Name="immotile" Type="nvarchar" MaxLength="50" />
+    <Property Name="ovm" Type="nvarchar" MaxLength="50" />
+    <Property Name="coc2" Type="nvarchar" MaxLength="50" />
+    <Property Name="m2" Type="nvarchar" MaxLength="50" />
+    <Property Name="m1" Type="nvarchar" MaxLength="50" />
+    <Property Name="gv" Type="nvarchar" MaxLength="50" />
+    <Property Name="ez" Type="nvarchar" MaxLength="50" />
+    <Property Name="injected" Type="nvarchar" MaxLength="50" />
+    <Property Name="embryoT" Type="nvarchar" MaxLength="50" />
+    <Property Name="embryoS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="image">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="service_id" Type="int" />
+    <Property Name="img" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="typeLab" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="total" Type="float" />
+    <Property Name="dis" Type="float" />
+    <Property Name="total2" Type="float" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="idnum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="import_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="imp_id" Type="int" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quatity" Type="float" />
+    <Property Name="min_quantity" Type="float" />
+    <Property Name="price" Type="float" />
+    <Property Name="total_price" Type="float" />
+    <Property Name="order_status" Type="int" />
+    <Property Name="ex_date" Type="datetime" />
+    <Property Name="med_id" Type="int" />
+  </EntityType>
+  <EntityType Name="inject">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="proced" Type="nvarchar" MaxLength="50" />
+    <Property Name="protocol" Type="nvarchar" MaxLength="50" />
+    <Property Name="HMG_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="FSH_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="agonist" Type="nvarchar" MaxLength="50" />
+    <Property Name="antagonist" Type="nvarchar" MaxLength="50" />
+    <Property Name="semen_source" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bmi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fsh" Type="nvarchar" MaxLength="50" />
+    <Property Name="LH" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRL" Type="nvarchar" MaxLength="50" />
+    <Property Name="TSH" Type="nvarchar" MaxLength="50" />
+    <Property Name="AMH" Type="nvarchar" MaxLength="50" />
+    <Property Name="APHL" Type="nvarchar" MaxLength="50" />
+    <Property Name="ANA" Type="nvarchar" MaxLength="50" />
+    <Property Name="ATA" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rubella" Type="nvarchar" MaxLength="50" />
+    <Property Name="HCV_HBV_AIDS" Type="nvarchar" MaxLength="50" />
+    <Property Name="ABO" Type="nvarchar" MaxLength="50" />
+    <Property Name="RH" Type="nvarchar" MaxLength="50" />
+    <Property Name="HB" Type="nvarchar" MaxLength="50" />
+    <Property Name="PC" Type="nvarchar" MaxLength="50" />
+    <Property Name="BT" Type="nvarchar" MaxLength="50" />
+    <Property Name="CT" Type="nvarchar" MaxLength="50" />
+    <Property Name="SGOT" Type="nvarchar" MaxLength="50" />
+    <Property Name="SGPT" Type="nvarchar" MaxLength="50" />
+    <Property Name="UREA" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATENIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="hbv" Type="nvarchar" MaxLength="50" />
+    <Property Name="aids" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="invoice">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="total" Type="float" />
+    <Property Name="dis" Type="float" />
+    <Property Name="total2" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="idnum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="invoice_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="inv_id" Type="int" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="price" Type="float" />
+    <Property Name="total_price" Type="float" />
+    <Property Name="order_status" Type="int" />
+    <Property Name="ex_date" Type="datetime" />
+    <Property Name="med_id" Type="int" />
+  </EntityType>
+  <EntityType Name="lab_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="bit" />
+    <Property Name="lab_id" Type="int" />
+    <Property Name="lab_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="lab_result" Type="nvarchar(max)" />
+    <Property Name="ticketId" Type="int" />
+    <Property Name="docNmae" Type="nvarchar" MaxLength="50" />
+    <Property Name="discount" Type="float" />
+  </EntityType>
+  <EntityType Name="labb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="laparoscopic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="PatServ_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="anesthesia" Type="nvarchar" MaxLength="50" />
+    <Property Name="panoramic" Type="nvarchar" MaxLength="50" />
+    <Property Name="uterus" Type="nvarchar" MaxLength="50" />
+    <Property Name="uterus_abnormal" Type="nvarchar" MaxLength="50" />
+    <Property Name="uterus_adhesion" Type="nvarchar" MaxLength="50" />
+    <Property Name="bladder" Type="nvarchar" MaxLength="50" />
+    <Property Name="LtTubes" Type="nvarchar" MaxLength="50" />
+    <Property Name="LtTubesComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="LtOvary" Type="nvarchar" MaxLength="50" />
+    <Property Name="LtOvaryComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="LtOvarainFossa" Type="nvarchar" MaxLength="50" />
+    <Property Name="LtOvarainFossaComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="RtTubes" Type="nvarchar" MaxLength="50" />
+    <Property Name="RtTubesComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="RtOvary" Type="nvarchar" MaxLength="50" />
+    <Property Name="RtOvaryComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="RtOvarainFossa" Type="nvarchar" MaxLength="50" />
+    <Property Name="RtOvarainFossaComment" Type="nvarchar" MaxLength="255" />
+    <Property Name="douglas" Type="nvarchar" MaxLength="255" />
+    <Property Name="uterosacral" Type="nvarchar" MaxLength="255" />
+    <Property Name="operative" Type="nvarchar" MaxLength="255" />
+    <Property Name="impression" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="loan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="value" Type="float" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="no_months" Type="int" />
+    <Property Name="lab_id" Type="int" />
+  </EntityType>
+  <EntityType Name="loan_installment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="loan_id" Type="int" />
+    <Property Name="value" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="payed" Type="bit" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="lab_id" Type="int" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LUTS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Frequercy" Type="bit" />
+    <Property Name="No_Cuturia" Type="bit" />
+    <Property Name="Urgucy" Type="bit" />
+    <Property Name="Lu_contineuce" Type="bit" />
+    <Property Name="Stress" Type="bit" />
+    <Property Name="Lugluge" Type="bit" />
+    <Property Name="True" Type="bit" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="rec_id" Type="int" />
+    <Property Name="txt" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="medical_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="rep_content" Type="nvarchar(max)" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="medicin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="buy_price" Type="float" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="alert_qty" Type="float" />
+    <Property Name="alert_ex_date" Type="int" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="company" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="month_days">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="workDays" Type="int" />
+  </EntityType>
+  <EntityType Name="monthdetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="shiftstring" Type="nvarchar" MaxLength="50" />
+    <Property Name="day" Type="nvarchar" MaxLength="50" />
+    <Property Name="come" Type="datetime" />
+    <Property Name="go" Type="datetime" />
+    <Property Name="attendhours" Type="float" />
+    <Property Name="extrahour" Type="float" />
+    <Property Name="shorthour" Type="float" />
+    <Property Name="attentMintues" Type="float" />
+    <Property Name="extraMinutes" Type="float" />
+    <Property Name="shortMinutes" Type="float" />
+    <Property Name="dayNum" Type="int" />
+  </EntityType>
+  <EntityType Name="oberative_sheetTB">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patiant_id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="Expected_Total_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Collection" Type="nvarchar" MaxLength="50" />
+    <Property Name="media1" Type="nvarchar" MaxLength="50" />
+    <Property Name="ICSI" Type="nvarchar" MaxLength="50" />
+    <Property Name="media2" Type="nvarchar" MaxLength="50" />
+    <Property Name="EZ" Type="nvarchar" MaxLength="50" />
+    <Property Name="GV" Type="nvarchar" MaxLength="50" />
+    <Property Name="MI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MII" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quality" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day5" Type="nvarchar" MaxLength="50" />
+    <Property Name="DAy6" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date_transfer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Grades" Type="nvarchar" MaxLength="50" />
+    <Property Name="Catheter" Type="nvarchar" MaxLength="50" />
+    <Property Name="Doctor_transfer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day_of_freez_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tank_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="canister_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="code_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="tube_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="color_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="media_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="doctor_embryo" Type="nvarchar" MaxLength="50" />
+    <Property Name="notes_embryo" Type="nvarchar(max)" />
+    <Property Name="Day_of_freez_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tank_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="canister_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="code_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="tube_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="color_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="media_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="doctor_analysis" Type="nvarchar" MaxLength="50" />
+    <Property Name="notes_analysis" Type="nvarchar(max)" />
+    <Property Name="out_come" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+    <Property Name="del" Type="bit" />
+  </EntityType>
+  <EntityType Name="others">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="pain" Type="bit" />
+    <Property Name="Feuer" Type="bit" />
+    <Property Name="Uruil_change" Type="bit" />
+    <Property Name="Dischosage" Type="bit" />
+    <Property Name="Fistula" Type="bit" />
+    <Property Name="shinus" Type="bit" />
+    <Property Name="aual_pain" Type="bit" />
+    <Property Name="othertxt" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="out_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Report_no" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_report" Type="datetime" />
+    <Property Name="medical_no" Type="nvarchar" MaxLength="50" />
+    <Property Name="arrival_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="arrival_date" Type="datetime" />
+    <Property Name="Medical_histoy" Type="nvarchar(max)" />
+    <Property Name="physical_finding" Type="nvarchar(max)" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="operation" Type="nvarchar(max)" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="past_History">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="smorokus" Type="bit" />
+    <Property Name="stones" Type="bit" />
+    <Property Name="operatient" Type="bit" />
+    <Property Name="Traunua" Type="bit" />
+    <Property Name="TB" Type="bit" />
+    <Property Name="Diabetes" Type="bit" />
+    <Property Name="Hypenteus" Type="bit" />
+    <Property Name="cancer" Type="bit" />
+    <Property Name="Ischluic_ttt" Type="bit" />
+    <Property Name="Astiua" Type="bit" />
+    <Property Name="candiac_Stuiet" Type="bit" />
+    <Property Name="others" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="age" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="nationalty" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="government" Type="nvarchar" MaxLength="50" />
+    <Property Name="husband" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+    <Property Name="social_state" Type="nvarchar" MaxLength="50" />
+    <Property Name="ssi" Type="nvarchar" MaxLength="50" />
+    <Property Name="job" Type="nvarchar" MaxLength="50" />
+    <Property Name="gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="enter_date" Type="datetime" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="other" Type="nvarchar(max)" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="plus" Type="nvarchar" MaxLength="50" />
+    <Property Name="Temp" Type="nvarchar" MaxLength="50" />
+    <Property Name="Respiral" Type="nvarchar" MaxLength="50" />
+    <Property Name="BR2" Type="nvarchar" MaxLength="50" />
+    <Property Name="BR1" Type="nvarchar" MaxLength="50" />
+    <Property Name="weight" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diabetes" Type="nvarchar" MaxLength="50" />
+    <Property Name="pregnancy" Type="nvarchar" MaxLength="50" />
+    <Property Name="hepatitis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Asthma" Type="nvarchar" MaxLength="50" />
+    <Property Name="diac" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="patient_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="service_id" Type="int" />
+    <Property Name="service_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="details_id" Type="int" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="check_out" Type="bit" />
+    <Property Name="confirm_calc" Type="bit" />
+    <Property Name="hos_value" Type="float" />
+    <Property Name="doc_value" Type="float" />
+    <Property Name="serTypee" Type="nvarchar" MaxLength="50" />
+    <Property Name="main_val" Type="float" />
+    <Property Name="unit_val" Type="float" />
+  </EntityType>
+  <EntityType Name="patient_services">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="service_id" Type="int" />
+    <Property Name="service_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="total" Type="float" />
+    <Property Name="flage" Type="bit" />
+    <Property Name="notes" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
+    <Property Name="diag" Type="nvarchar" MaxLength="255" />
+    <Property Name="blood" Type="nvarchar" MaxLength="50" />
+    <Property Name="lmp" Type="datetime" />
+    <Property Name="edd" Type="datetime" />
+    <Property Name="no_follicleRT" Type="nvarchar" MaxLength="50" />
+    <Property Name="no_follicleLT" Type="nvarchar" MaxLength="50" />
+    <Property Name="size_follicleRT" Type="nvarchar" MaxLength="50" />
+    <Property Name="size_follicleLT" Type="nvarchar" MaxLength="50" />
+    <Property Name="endo" Type="nvarchar" MaxLength="50" />
+    <Property Name="otherRT" Type="nvarchar" MaxLength="50" />
+    <Property Name="otherLT" Type="nvarchar" MaxLength="50" />
+    <Property Name="wks" Type="nvarchar" MaxLength="50" />
+    <Property Name="sex" Type="nvarchar" MaxLength="50" />
+    <Property Name="fwt" Type="nvarchar" MaxLength="50" />
+    <Property Name="other" Type="nvarchar" MaxLength="50" />
+    <Property Name="hb" Type="nvarchar" MaxLength="50" />
+    <Property Name="rbs" Type="nvarchar" MaxLength="50" />
+    <Property Name="num" Type="int" />
+    <Property Name="come" Type="bit" />
+    <Property Name="enter" Type="bit" />
+  </EntityType>
+  <EntityType Name="payementList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="post_micturation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Feeling_uicomplete_En" Type="bit" />
+    <Property Name="post_micturation_drippliz" Type="bit" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="Rec_id" Type="int" />
+    <Property Name="txt" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="rad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+  </EntityType>
+  <EntityType Name="rad_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="bit" />
+    <Property Name="rad_id" Type="int" />
+    <Property Name="rad_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="rad_result" Type="nvarchar(max)" />
+    <Property Name="ticketId" Type="int" />
+    <Property Name="docNmae" Type="nvarchar" MaxLength="50" />
+    <Property Name="discount" Type="float" />
+  </EntityType>
+  <EntityType Name="Rel_patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="national_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="age" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rel_num" Type="nvarchar" MaxLength="50" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="return_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="return_id" Type="int" />
+    <Property Name="prod_code" Type="nvarchar" MaxLength="50" />
+    <Property Name="prod_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="price" Type="float" />
+    <Property Name="total" Type="float" />
+    <Property Name="status" Type="int" />
+    <Property Name="ex_date" Type="datetime" />
+    <Property Name="med_id" Type="int" />
+  </EntityType>
+  <EntityType Name="return_items2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="return_id" Type="int" />
+    <Property Name="prod_code" Type="nvarchar" MaxLength="50" />
+    <Property Name="prod_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="price" Type="float" />
+    <Property Name="total" Type="float" />
+    <Property Name="status" Type="int" />
+    <Property Name="ex_date" Type="datetime" />
+    <Property Name="med_id" Type="int" />
+  </EntityType>
+  <EntityType Name="returninv">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="idnum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="total" Type="float" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="inv_id" Type="int" />
+  </EntityType>
+  <EntityType Name="returninv2">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="idnum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="total" Type="float" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="imp_id" Type="int" />
+  </EntityType>
+  <EntityType Name="room">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="floor" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="datenow" Type="datetime" />
+    <Property Name="flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="room_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="bit" />
+    <Property Name="room_id" Type="int" />
+    <Property Name="room_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="total" Type="float" />
+    <Property Name="check_out" Type="bit" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="from_date" Type="datetime" />
+    <Property Name="to_date" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="dev_val" Type="float" />
+    <Property Name="enter_val" Type="float" />
+    <Property Name="total_val" Type="float" />
+    <Property Name="medical_care" Type="float" />
+    <Property Name="nursery_service" Type="float" />
+    <Property Name="artificialBreath_val" Type="float" />
+    <Property Name="treat_val" Type="float" />
+    <Property Name="foto_val" Type="float" />
+    <Property Name="oxcegin_val" Type="float" />
+    <Property Name="blood_change_val" Type="float" />
+    <Property Name="xray_val" Type="float" />
+    <Property Name="lab_val" Type="float" />
+    <Property Name="admistrations_val" Type="float" />
+    <Property Name="care_val" Type="float" />
+    <Property Name="insurance_val" Type="float" />
+    <Property Name="reminder_val" Type="float" />
+    <Property Name="ticketId" Type="int" />
+  </EntityType>
+  <EntityType Name="sanc_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="sanc_id" Type="int" />
+    <Property Name="sanc_value" Type="float" />
+    <Property Name="sanc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sanctions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="value" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="emp_id" Type="int" />
+  </EntityType>
+  <EntityType Name="savee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="in_value" Type="float" />
+    <Property Name="out_value" Type="float" />
+    <Property Name="balance" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="item_id" Type="int" />
+    <Property Name="paylist_id" Type="int" />
+    <Property Name="disc" Type="float" />
+    <Property Name="ticketId" Type="int" />
+  </EntityType>
+  <EntityType Name="service">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="float" />
+    <Property Name="del" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="serType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="session_med">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Clinic_RecID" Type="int" />
+    <Property Name="TypeService" Type="nvarchar" MaxLength="50" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="extra" Type="nvarchar" MaxLength="50" />
+    <Property Name="note" Type="nvarchar" MaxLength="150" />
+    <Property Name="printFlag" Type="int" />
+  </EntityType>
+  <EntityType Name="sites">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kindlyRt" Type="bit" />
+    <Property Name="kindlylt" Type="bit" />
+    <Property Name="UreterRt" Type="bit" />
+    <Property Name="Ureterlt" Type="bit" />
+    <Property Name="BlodderRt" Type="bit" />
+    <Property Name="Blodderlt" Type="bit" />
+    <Property Name="PeuileRt" Type="bit" />
+    <Property Name="Peuilelt" Type="bit" />
+    <Property Name="TestisRt" Type="bit" />
+    <Property Name="Testislt" Type="bit" />
+    <Property Name="scroumRt" Type="bit" />
+    <Property Name="scroumLt" Type="bit" />
+    <Property Name="peqRt" Type="bit" />
+    <Property Name="preLt" Type="bit" />
+    <Property Name="others" Type="nvarchar" MaxLength="50" />
+    <Property Name="surg_id" Type="int" />
+  </EntityType>
+  <EntityType Name="stadd">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="idnum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <EntityType Name="stadd_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prod_id" Type="int" />
+    <Property Name="prod_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="status" Type="int" />
+    <Property Name="inv_id" Type="int" />
+    <Property Name="price" Type="float" />
+    <Property Name="totalprice" Type="float" />
+  </EntityType>
+  <EntityType Name="stock_destroy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prod_id" Type="int" />
+    <Property Name="prod_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="qty" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="dep_id" Type="int" />
+    <Property Name="source" Type="nvarchar" MaxLength="50" />
+    <Property Name="dep_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="stocks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="alert_qty" Type="float" />
+    <Property Name="cat_id" Type="int" />
+    <Property Name="cate_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="dest_time" Type="float" />
+  </EntityType>
+  <EntityType Name="Stream_options">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StreamId" Type="int" />
+    <Property Name="slow" Type="bit" />
+    <Property Name="Splithlis" Type="bit" />
+    <Property Name="liten_mitteut" Type="bit" />
+  </EntityType>
+  <EntityType Name="surgery_doctors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surgery_type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Surgery_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="assistant_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nursery_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="surgeon_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Diagnosis" Type="nvarchar(max)" />
+    <Property Name="surgery_price" Type="float" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="otherSurg" Type="nvarchar" MaxLength="50" />
+    <Property Name="operation_description" Type="nvarchar(max)" />
+    <Property Name="operation_done" Type="nvarchar(max)" />
+    <Property Name="trent" Type="nvarchar(max)" />
+    <Property Name="previous_opeation" Type="nvarchar(max)" />
+    <Property Name="Drauis" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tubes" Type="nvarchar(max)" />
+    <Property Name="stitches" Type="nvarchar(max)" />
+    <Property Name="Dressuis" Type="nvarchar(max)" />
+    <Property Name="cathers" Type="nvarchar(max)" />
+    <Property Name="stuits" Type="nvarchar(max)" />
+    <Property Name="Prosthetic" Type="nvarchar(max)" />
+    <Property Name="other_instruction" Type="nvarchar(max)" />
+    <Property Name="period" Type="float" />
+    <Property Name="Anaestusia" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeSurg" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="flag" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="Rel_id" Type="int" />
+    <Property Name="Company_id" Type="int" />
+    <Property Name="code" Type="int" />
+    <Property Name="typeticket" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="RelationType" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="out_date" Type="datetime" />
+    <Property Name="note" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ticket_out">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="patient_id" Type="int" />
+    <Property Name="patient_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="flag" Type="bit" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="del" Type="bit" />
+    <Property Name="doc_id" Type="int" />
+    <Property Name="RelationType" Type="nvarchar" MaxLength="50" />
+    <Property Name="doc_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="code" Type="int" />
+  </EntityType>
+  <EntityType Name="transfer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="amount" Type="float" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="flag" Type="int" />
+  </EntityType>
+  <EntityType Name="treat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="treatment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="price" Type="float" />
+    <Property Name="total_price" Type="float" />
+    <Property Name="order_status" Type="int" />
+    <Property Name="ex_date" Type="datetime" />
+    <Property Name="med_id" Type="int" />
+    <Property Name="ticket_id" Type="int" />
+    <Property Name="dep_id" Type="int" />
+    <Property Name="flag" Type="int" />
+    <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="prod_id" Type="int" />
+    <Property Name="datenow" Type="datetime" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="check_out" Type="bit" />
+    <Property Name="ticketId" Type="int" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="priv" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="date_now" Type="datetime" />
+    <Property Name="del" Type="bit" />
+    <Property Name="use_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="clinic_id" Type="int" />
+    <Property Name="clinic_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UTS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mass" Type="bit" />
+    <Property Name="pain" Type="bit" />
+    <Property Name="Heuiaturia" Type="bit" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="txt" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Voidues">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stream" Type="bit" />
+    <Property Name="Hesitoucy" Type="bit" />
+    <Property Name="Strauius" Type="bit" />
+    <Property Name="Tesmul_drippluis" Type="bit" />
+    <Property Name="pat_id" Type="int" />
+    <Property Name="pat_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="txt" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rec_id" Type="int" />
+  </EntityType>
+  <EntityContainer Name="EccoHospitalCopyModelStoreContainer">
+    <EntitySet Name="Acc_save" EntityType="Self.Acc_save" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="activation" EntityType="Self.activation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="add_list" EntityType="Self.add_list" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="addition" EntityType="Self.addition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bank" EntityType="Self.bank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bank_balance" EntityType="Self.bank_balance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clinic" EntityType="Self.clinic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clinic_reception" EntityType="Self.clinic_reception" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clinic_time" EntityType="Self.clinic_time" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="company" EntityType="Self.company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cong_Anthio" EntityType="Self.cong_Anthio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="departments" EntityType="Self.departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepStock" EntityType="Self.DepStock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="destroy" EntityType="Self.destroy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="device" EntityType="Self.device" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="device_history" EntityType="Self.device_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="doctor" EntityType="Self.doctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="doctor_account" EntityType="Self.doctor_account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="doctor_services" EntityType="Self.doctor_services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ED" EntityType="Self.ED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emagercy" EntityType="Self.Emagercy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exammination" EntityType="Self.Exammination" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Family_history" EntityType="Self.Family_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="finger" EntityType="Self.finger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="frozen_embryo" EntityType="Self.frozen_embryo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hystroscopy" EntityType="Self.hystroscopy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="icsi_report" EntityType="Self.icsi_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="image" EntityType="Self.image" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="import" EntityType="Self.import" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="import_items" EntityType="Self.import_items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inject" EntityType="Self.inject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="invoice" EntityType="Self.invoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="invoice_items" EntityType="Self.invoice_items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lab_history" EntityType="Self.lab_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="labb" EntityType="Self.labb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="laparoscopic" EntityType="Self.laparoscopic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="loan" EntityType="Self.loan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="loan_installment" EntityType="Self.loan_installment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LUTS" EntityType="Self.LUTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="medical_report" EntityType="Self.medical_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="medicin" EntityType="Self.medicin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="month_days" EntityType="Self.month_days" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="monthdetails" EntityType="Self.monthdetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="oberative_sheetTB" EntityType="Self.oberative_sheetTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="others" EntityType="Self.others" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="out_report" EntityType="Self.out_report" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="past_History" EntityType="Self.past_History" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="patient" EntityType="Self.patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="patient_history" EntityType="Self.patient_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="patient_services" EntityType="Self.patient_services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="payementList" EntityType="Self.payementList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="post_micturation" EntityType="Self.post_micturation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="rad" EntityType="Self.rad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="rad_history" EntityType="Self.rad_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rel_patient" EntityType="Self.Rel_patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="return_items" EntityType="Self.return_items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="return_items2" EntityType="Self.return_items2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="returninv" EntityType="Self.returninv" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="returninv2" EntityType="Self.returninv2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="room" EntityType="Self.room" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="room_history" EntityType="Self.room_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sanc_list" EntityType="Self.sanc_list" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sanctions" EntityType="Self.sanctions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="savee" EntityType="Self.savee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="service" EntityType="Self.service" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="session_med" EntityType="Self.session_med" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sites" EntityType="Self.sites" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stadd" EntityType="Self.stadd" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stadd_items" EntityType="Self.stadd_items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stock_destroy" EntityType="Self.stock_destroy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stocks" EntityType="Self.stocks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stream_options" EntityType="Self.Stream_options" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="surgery_doctors" EntityType="Self.surgery_doctors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Surgery_history" EntityType="Self.Surgery_history" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticket_out" EntityType="Self.ticket_out" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="transfer" EntityType="Self.transfer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="treat" EntityType="Self.treat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="treatment" EntityType="Self.treatment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UTS" EntityType="Self.UTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Voidues" EntityType="Self.Voidues" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

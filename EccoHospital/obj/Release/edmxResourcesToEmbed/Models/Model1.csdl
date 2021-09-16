@@ -1,0 +1,1492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EccoHospitalCopyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Acc_save">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="in_value" Type="Double" />
+    <Property Name="out_value" Type="Double" />
+    <Property Name="balance" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_acc_id" Type="Int32" />
+    <Property Name="paylist_id" Type="Int32" />
+    <Property Name="item_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="activation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HMG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FSH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RT1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RT2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RT3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RT4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LT1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LT2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LT3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LT4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="End_thickness" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="End_pattern" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="E2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="add_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="add_id" Type="Int32" />
+    <Property Name="add_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="add_value" Type="Double" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="emp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="addition">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="bank">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="account_num" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="bank_balance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="in_val" Type="Double" />
+    <Property Name="out_val" Type="Double" />
+    <Property Name="inc_id" Type="Int32" />
+    <Property Name="pay_id" Type="Int32" />
+    <Property Name="bank_id" Type="Int32" />
+    <Property Name="bank_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="clinic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price1" Type="Double" />
+    <Property Name="price2" Type="Double" />
+    <Property Name="price3" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="clinic_reception">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="number" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="datenow" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="status" Type="Boolean" />
+    <Property Name="check_out" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ticketId" Type="Int32" />
+    <Property Name="Diagnosis" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Complaint" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="note" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="printFlag" Type="Boolean" />
+    <Property Name="UUTS" Type="Boolean" />
+    <Property Name="LUTS" Type="Boolean" />
+    <Property Name="ED" Type="Boolean" />
+    <Property Name="Emergency" Type="Boolean" />
+    <Property Name="others" Type="Boolean" />
+    <Property Name="cong" Type="Boolean" />
+    <Property Name="post_mi" Type="Boolean" />
+    <Property Name="voidus" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="clinic_time">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fromm" Type="Time" Precision="7" />
+    <Property Name="too" Type="Time" Precision="7" />
+    <Property Name="day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="day_num" Type="Int32" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="clinic_id" Type="Int32" />
+    <Property Name="clinic_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="percentage" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="departments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DepStock">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="depid" Type="Int32" />
+    <Property Name="dep_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prod_id" Type="Int32" />
+    <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="destroy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="med_id" Type="Int32" />
+    <Property Name="med_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="med_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="import_id" Type="Int32" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="expirdate" Type="DateTime" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="datenow" Type="DateTime" Precision="3" />
+    <Property Name="sources" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="doctor_account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="in_val" Type="Double" />
+    <Property Name="out_val" Type="Double" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="p_historyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="finger">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="photoNo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="enrollNo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="verifyMode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="date2" Type="DateTime" Precision="3" />
+    <Property Name="date1" Type="DateTime" Precision="3" />
+    <Property Name="hourNum" Type="Double" />
+    <Property Name="shortmin" Type="Double" />
+    <Property Name="extramin" Type="Double" />
+    <Property Name="shorth" Type="Double" />
+    <Property Name="extrah" Type="Double" />
+  </EntityType>
+  <EntityType Name="frozen_embryo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="d1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="es1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="es2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="es3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="en1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="en2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="en3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="in1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="in2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="in3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="preg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="preg_date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="hystroscopy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="Patserv_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="clinic_diag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uterin_sounding" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="intro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uterin_cavity" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="endometrium" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tubal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="distention" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="diag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="paln" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="operative_notes" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="icsi_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="protocol" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="drugs" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="period" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="comment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hcg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="coc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="np" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="immotile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ovm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="coc2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="m2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="m1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ez" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="injected" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="embryoT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="embryoS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="image">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="service_id" Type="Int32" />
+    <Property Name="img" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="typeLab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="total" Type="Double" />
+    <Property Name="dis" Type="Double" />
+    <Property Name="total2" Type="Double" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="idnum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="import_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="imp_id" Type="Int32" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quatity" Type="Double" />
+    <Property Name="min_quantity" Type="Double" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total_price" Type="Double" />
+    <Property Name="order_status" Type="Int32" />
+    <Property Name="ex_date" Type="DateTime" Precision="3" />
+    <Property Name="med_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="inject">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="proced" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="protocol" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HMG_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FSH_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="agonist" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="antagonist" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="semen_source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Bmi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fsh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PRL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TSH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AMH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="APHL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ANA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ATA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rubella" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HCV_HBV_AIDS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ABO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SGOT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SGPT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UREA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATENIN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hbv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="aids" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="invoice">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="total" Type="Double" />
+    <Property Name="dis" Type="Double" />
+    <Property Name="total2" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="idnum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="invoice_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="inv_id" Type="Int32" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total_price" Type="Double" />
+    <Property Name="order_status" Type="Int32" />
+    <Property Name="ex_date" Type="DateTime" Precision="3" />
+    <Property Name="med_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="lab_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Boolean" />
+    <Property Name="lab_id" Type="Int32" />
+    <Property Name="lab_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="lab_result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ticketId" Type="Int32" />
+    <Property Name="docNmae" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="discount" Type="Double" />
+  </EntityType>
+  <EntityType Name="labb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="laparoscopic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="PatServ_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="anesthesia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="panoramic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uterus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uterus_abnormal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uterus_adhesion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bladder" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LtTubes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LtTubesComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LtOvary" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LtOvaryComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LtOvarainFossa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LtOvarainFossaComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RtTubes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RtTubesComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RtOvary" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RtOvaryComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RtOvarainFossa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RtOvarainFossaComment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="douglas" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="uterosacral" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="operative" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="impression" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="loan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="value" Type="Double" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="no_months" Type="Int32" />
+    <Property Name="lab_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="loan_installment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="loan_id" Type="Int32" />
+    <Property Name="value" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="payed" Type="Boolean" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="lab_id" Type="Int32" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="medical_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rep_content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="medicin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="buy_price" Type="Double" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alert_qty" Type="Double" />
+    <Property Name="alert_ex_date" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="month_days">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="workDays" Type="Int32" />
+  </EntityType>
+  <EntityType Name="monthdetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="shiftstring" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="come" Type="DateTime" Precision="3" />
+    <Property Name="go" Type="DateTime" Precision="3" />
+    <Property Name="attendhours" Type="Double" />
+    <Property Name="extrahour" Type="Double" />
+    <Property Name="shorthour" Type="Double" />
+    <Property Name="attentMintues" Type="Double" />
+    <Property Name="extraMinutes" Type="Double" />
+    <Property Name="shortMinutes" Type="Double" />
+    <Property Name="dayNum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="oberative_sheetTB">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patiant_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="Expected_Total_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Collection" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="media1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ICSI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="media2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EZ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MII" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DAy6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date_transfer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Grades" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Catheter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Doctor_transfer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day_of_freez_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tank_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="canister_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="code_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tube_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="media_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doctor_embryo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="notes_embryo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Day_of_freez_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tank_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="canister_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="code_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tube_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="media_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doctor_analysis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="notes_analysis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="out_come" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="patient_services">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="service_id" Type="Int32" />
+    <Property Name="service_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="total" Type="Double" />
+    <Property Name="flage" Type="Boolean" />
+    <Property Name="notes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="diag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="blood" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lmp" Type="DateTime" Precision="3" />
+    <Property Name="edd" Type="DateTime" Precision="3" />
+    <Property Name="no_follicleRT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="no_follicleLT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="size_follicleRT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="size_follicleLT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="endo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="otherRT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="otherLT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="wks" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sex" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fwt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="other" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rbs" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="num" Type="Int32" />
+    <Property Name="come" Type="Boolean" />
+    <Property Name="enter" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="payementList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="rad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="rad_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Boolean" />
+    <Property Name="rad_id" Type="Int32" />
+    <Property Name="rad_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="rad_result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ticketId" Type="Int32" />
+    <Property Name="docNmae" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="discount" Type="Double" />
+  </EntityType>
+  <EntityType Name="Rel_patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="national_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Rel_num" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="return_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="return_id" Type="Int32" />
+    <Property Name="prod_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="ex_date" Type="DateTime" Precision="3" />
+    <Property Name="med_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="return_items2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="return_id" Type="Int32" />
+    <Property Name="prod_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="ex_date" Type="DateTime" Precision="3" />
+    <Property Name="med_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="returninv">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="idnum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="total" Type="Double" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="inv_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="returninv2">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="idnum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="total" Type="Double" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="imp_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="room">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="datenow" Type="DateTime" Precision="3" />
+    <Property Name="flag" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="room_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Boolean" />
+    <Property Name="room_id" Type="Int32" />
+    <Property Name="room_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="check_out" Type="Boolean" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="from_date" Type="DateTime" Precision="3" />
+    <Property Name="to_date" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dev_val" Type="Double" />
+    <Property Name="enter_val" Type="Double" />
+    <Property Name="total_val" Type="Double" />
+    <Property Name="medical_care" Type="Double" />
+    <Property Name="nursery_service" Type="Double" />
+    <Property Name="artificialBreath_val" Type="Double" />
+    <Property Name="treat_val" Type="Double" />
+    <Property Name="foto_val" Type="Double" />
+    <Property Name="oxcegin_val" Type="Double" />
+    <Property Name="blood_change_val" Type="Double" />
+    <Property Name="xray_val" Type="Double" />
+    <Property Name="lab_val" Type="Double" />
+    <Property Name="admistrations_val" Type="Double" />
+    <Property Name="care_val" Type="Double" />
+    <Property Name="insurance_val" Type="Double" />
+    <Property Name="reminder_val" Type="Double" />
+    <Property Name="ticketId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sanc_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="sanc_id" Type="Int32" />
+    <Property Name="sanc_value" Type="Double" />
+    <Property Name="sanc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="sanctions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="savee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="in_value" Type="Double" />
+    <Property Name="out_value" Type="Double" />
+    <Property Name="balance" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="paylist_id" Type="Int32" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="ticketId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="session_med">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Clinic_RecID" Type="Int32" />
+    <Property Name="TypeService" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="extra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="note" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="printFlag" Type="Int32" />
+  </EntityType>
+  <EntityType Name="stadd">
+    <Key>
+      <PropertyRef Name="idnum" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="idnum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="total" Type="Double" />
+  </EntityType>
+  <EntityType Name="stadd_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_id" Type="Int32" />
+    <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="inv_id" Type="Int32" />
+    <Property Name="price" Type="Double" />
+    <Property Name="totalprice" Type="Double" />
+  </EntityType>
+  <EntityType Name="stock_destroy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_id" Type="Int32" />
+    <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="qty" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="dep_id" Type="Int32" />
+    <Property Name="source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dep_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="stocks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="alert_qty" Type="Double" />
+    <Property Name="cat_id" Type="Int32" />
+    <Property Name="cate_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dest_time" Type="Double" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="flag" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="Rel_id" Type="Int32" />
+    <Property Name="Company_id" Type="Int32" />
+    <Property Name="code" Type="Int32" />
+    <Property Name="typeticket" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="RelationType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="out_date" Type="DateTime" Precision="3" />
+    <Property Name="note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ticket_out">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="flag" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="RelationType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="code" Type="Int32" />
+  </EntityType>
+  <EntityType Name="transfer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="amount" Type="Double" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="flag" Type="Int32" />
+  </EntityType>
+  <EntityType Name="treat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="treatment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total_price" Type="Double" />
+    <Property Name="order_status" Type="Int32" />
+    <Property Name="ex_date" Type="DateTime" Precision="3" />
+    <Property Name="med_id" Type="Int32" />
+    <Property Name="ticket_id" Type="Int32" />
+    <Property Name="dep_id" Type="Int32" />
+    <Property Name="flag" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prod_id" Type="Int32" />
+    <Property Name="datenow" Type="DateTime" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="check_out" Type="Boolean" />
+    <Property Name="ticketId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="priv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="use_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="clinic_id" Type="Int32" />
+    <Property Name="clinic_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EccoHospitalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Acc_save" EntityType="Self.Acc_save" />
+    <EntitySet Name="activation" EntityType="Self.activation" />
+    <EntitySet Name="add_list" EntityType="Self.add_list" />
+    <EntitySet Name="addition" EntityType="Self.addition" />
+    <EntitySet Name="bank" EntityType="Self.bank" />
+    <EntitySet Name="bank_balance" EntityType="Self.bank_balance" />
+    <EntitySet Name="category" EntityType="Self.category" />
+    <EntitySet Name="clinic" EntityType="Self.clinic" />
+    <EntitySet Name="clinic_reception" EntityType="Self.clinic_reception" />
+    <EntitySet Name="clinic_time" EntityType="Self.clinic_time" />
+    <EntitySet Name="company" EntityType="Self.company" />
+    <EntitySet Name="departments" EntityType="Self.departments" />
+    <EntitySet Name="DepStock" EntityType="Self.DepStock" />
+    <EntitySet Name="destroy" EntityType="Self.destroy" />
+    <EntitySet Name="doctor_account" EntityType="Self.doctor_account" />
+    <EntitySet Name="finger" EntityType="Self.finger" />
+    <EntitySet Name="frozen_embryo" EntityType="Self.frozen_embryo" />
+    <EntitySet Name="hystroscopy" EntityType="Self.hystroscopy" />
+    <EntitySet Name="icsi_report" EntityType="Self.icsi_report" />
+    <EntitySet Name="image" EntityType="Self.image" />
+    <EntitySet Name="import" EntityType="Self.import" />
+    <EntitySet Name="import_items" EntityType="Self.import_items" />
+    <EntitySet Name="inject" EntityType="Self.inject" />
+    <EntitySet Name="invoice" EntityType="Self.invoice" />
+    <EntitySet Name="invoice_items" EntityType="Self.invoice_items" />
+    <EntitySet Name="lab_history" EntityType="Self.lab_history" />
+    <EntitySet Name="labb" EntityType="Self.labb" />
+    <EntitySet Name="laparoscopic" EntityType="Self.laparoscopic" />
+    <EntitySet Name="loan" EntityType="Self.loan" />
+    <EntitySet Name="loan_installment" EntityType="Self.loan_installment" />
+    <EntitySet Name="medical_report" EntityType="Self.medical_report" />
+    <EntitySet Name="medicin" EntityType="Self.medicin" />
+    <EntitySet Name="month_days" EntityType="Self.month_days" />
+    <EntitySet Name="monthdetails" EntityType="Self.monthdetails" />
+    <EntitySet Name="oberative_sheetTB" EntityType="Self.oberative_sheetTB" />
+    <EntitySet Name="patient_services" EntityType="Self.patient_services" />
+    <EntitySet Name="payementList" EntityType="Self.payementList" />
+    <EntitySet Name="rad" EntityType="Self.rad" />
+    <EntitySet Name="rad_history" EntityType="Self.rad_history" />
+    <EntitySet Name="Rel_patient" EntityType="Self.Rel_patient" />
+    <EntitySet Name="return_items" EntityType="Self.return_items" />
+    <EntitySet Name="return_items2" EntityType="Self.return_items2" />
+    <EntitySet Name="returninv" EntityType="Self.returninv" />
+    <EntitySet Name="returninv2" EntityType="Self.returninv2" />
+    <EntitySet Name="room" EntityType="Self.room" />
+    <EntitySet Name="room_history" EntityType="Self.room_history" />
+    <EntitySet Name="sanc_list" EntityType="Self.sanc_list" />
+    <EntitySet Name="sanctions" EntityType="Self.sanctions" />
+    <EntitySet Name="savee" EntityType="Self.savee" />
+    <EntitySet Name="session_med" EntityType="Self.session_med" />
+    <EntitySet Name="stadd" EntityType="Self.stadd" />
+    <EntitySet Name="stadd_items" EntityType="Self.stadd_items" />
+    <EntitySet Name="stock_destroy" EntityType="Self.stock_destroy" />
+    <EntitySet Name="stocks" EntityType="Self.stocks" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" />
+    <EntitySet Name="ticket_out" EntityType="Self.ticket_out" />
+    <EntitySet Name="transfer" EntityType="Self.transfer" />
+    <EntitySet Name="treat" EntityType="Self.treat" />
+    <EntitySet Name="treatment" EntityType="Self.treatment" />
+    <EntitySet Name="user" EntityType="Self.user" />
+    <EntitySet Name="doctor" EntityType="EccoHospitalCopyModel.doctor" />
+    <EntitySet Name="service" EntityType="EccoHospitalCopyModel.service" />
+    <EntitySet Name="cong_Anthio" EntityType="EccoHospitalCopyModel.cong_Anthio" />
+    <EntitySet Name="ED" EntityType="EccoHospitalCopyModel.ED" />
+    <EntitySet Name="Emagercy" EntityType="EccoHospitalCopyModel.Emagercy" />
+    <EntitySet Name="Family_history" EntityType="EccoHospitalCopyModel.Family_history" />
+    <EntitySet Name="LUTS" EntityType="EccoHospitalCopyModel.LUTS" />
+    <EntitySet Name="others" EntityType="EccoHospitalCopyModel.others" />
+    <EntitySet Name="past_History" EntityType="EccoHospitalCopyModel.past_History" />
+    <EntitySet Name="post_micturation" EntityType="EccoHospitalCopyModel.post_micturation" />
+    <EntitySet Name="Stream_options" EntityType="EccoHospitalCopyModel.Stream_options" />
+    <EntitySet Name="UTS" EntityType="EccoHospitalCopyModel.UTS" />
+    <EntitySet Name="Voidues" EntityType="EccoHospitalCopyModel.Voidues" />
+    <EntitySet Name="patient_history" EntityType="EccoHospitalCopyModel.patient_history" />
+    <EntitySet Name="doctor_services" EntityType="EccoHospitalCopyModel.doctor_services" />
+    <EntitySet Name="sites" EntityType="EccoHospitalCopyModel.sites" />
+    <EntitySet Name="patient" EntityType="EccoHospitalCopyModel.patient" />
+    <EntitySet Name="Exammination" EntityType="EccoHospitalCopyModel.Exammination" />
+    <EntitySet Name="surgery_doctors" EntityType="EccoHospitalCopyModel.surgery_doctors" />
+    <EntitySet Name="out_report" EntityType="EccoHospitalCopyModel.out_report" />
+    <EntitySet Name="Surgery_history" EntityType="EccoHospitalCopyModel.Surgery_history" />
+  </EntityContainer>
+  <EntityType Name="doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="T_perc" Type="Double" />
+    <Property Name="F_perc" Type="Double" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="service">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="serType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="cong_Anthio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UUT" Type="Boolean" />
+    <Property Name="LUT" Type="Boolean" />
+    <Property Name="Hypospodias" Type="Boolean" />
+    <Property Name="Epispadias" Type="Boolean" />
+    <Property Name="undescTesties" Type="Boolean" />
+    <Property Name="others" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ED">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDISS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Emagercy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ret" Type="Boolean" />
+    <Property Name="anuria" Type="Boolean" />
+    <Property Name="uiy_Hydronc" Type="Boolean" />
+    <Property Name="Ueeuia" Type="Boolean" />
+    <Property Name="pria_pism" Type="Boolean" />
+    <Property Name="Torsion" Type="Boolean" />
+    <Property Name="Gaugleue" Type="Boolean" />
+    <Property Name="inFlection" Type="Boolean" />
+    <Property Name="Trauua" Type="Boolean" />
+    <Property Name="other" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Family_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patientId" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diabets" Type="Boolean" />
+    <Property Name="Hypiteusini" Type="Boolean" />
+    <Property Name="coucel" Type="Boolean" />
+    <Property Name="coucer_prostat" Type="Boolean" />
+    <Property Name="statues" Type="Boolean" />
+    <Property Name="Medical_equal_diseases" Type="Boolean" />
+    <Property Name="other" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LUTS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Frequercy" Type="Boolean" />
+    <Property Name="No_Cuturia" Type="Boolean" />
+    <Property Name="Urgucy" Type="Boolean" />
+    <Property Name="Lu_contineuce" Type="Boolean" />
+    <Property Name="Stress" Type="Boolean" />
+    <Property Name="Lugluge" Type="Boolean" />
+    <Property Name="True" Type="Boolean" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rec_id" Type="Int32" />
+    <Property Name="txt" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="others">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pain" Type="Boolean" />
+    <Property Name="Feuer" Type="Boolean" />
+    <Property Name="Uruil_change" Type="Boolean" />
+    <Property Name="Dischosage" Type="Boolean" />
+    <Property Name="Fistula" Type="Boolean" />
+    <Property Name="shinus" Type="Boolean" />
+    <Property Name="aual_pain" Type="Boolean" />
+    <Property Name="othertxt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="past_History">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="patient_id" Type="Int32" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="smorokus" Type="Boolean" />
+    <Property Name="stones" Type="Boolean" />
+    <Property Name="operatient" Type="Boolean" />
+    <Property Name="Traunua" Type="Boolean" />
+    <Property Name="TB" Type="Boolean" />
+    <Property Name="Diabetes" Type="Boolean" />
+    <Property Name="Hypenteus" Type="Boolean" />
+    <Property Name="cancer" Type="Boolean" />
+    <Property Name="Ischluic_ttt" Type="Boolean" />
+    <Property Name="Astiua" Type="Boolean" />
+    <Property Name="candiac_Stuiet" Type="Boolean" />
+    <Property Name="others" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="post_micturation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Feeling_uicomplete_En" Type="Boolean" />
+    <Property Name="post_micturation_drippliz" Type="Boolean" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="Rec_id" Type="Int32" />
+    <Property Name="txt" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Stream_options">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StreamId" Type="Int32" />
+    <Property Name="slow" Type="Boolean" />
+    <Property Name="Splithlis" Type="Boolean" />
+    <Property Name="liten_mitteut" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UTS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mass" Type="Boolean" />
+    <Property Name="pain" Type="Boolean" />
+    <Property Name="Heuiaturia" Type="Boolean" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="txt" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Voidues">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stream" Type="Boolean" />
+    <Property Name="Hesitoucy" Type="Boolean" />
+    <Property Name="Strauius" Type="Boolean" />
+    <Property Name="Tesmul_drippluis" Type="Boolean" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="txt" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="patient_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="service_id" Type="Int32" />
+    <Property Name="service_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="details_id" Type="Int32" />
+    <Property Name="del" Type="Boolean" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_now" Type="DateTime" Precision="3" />
+    <Property Name="check_out" Type="Boolean" />
+    <Property Name="confirm_calc" Type="Boolean" />
+    <Property Name="hos_value" Type="Double" />
+    <Property Name="doc_value" Type="Double" />
+    <Property Name="serTypee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="main_val" Type="Double" />
+    <Property Name="unit_val" Type="Double" />
+  </EntityType>
+  <EntityType Name="doctor_services">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceId" Type="Int32" />
+    <Property Name="doctorId" Type="Int32" />
+    <Property Name="pricce" Type="Double" />
+  </EntityType>
+  <EntityType Name="sites">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kindlyRt" Type="Boolean" />
+    <Property Name="kindlylt" Type="Boolean" />
+    <Property Name="UreterRt" Type="Boolean" />
+    <Property Name="Ureterlt" Type="Boolean" />
+    <Property Name="BlodderRt" Type="Boolean" />
+    <Property Name="Blodderlt" Type="Boolean" />
+    <Property Name="PeuileRt" Type="Boolean" />
+    <Property Name="Peuilelt" Type="Boolean" />
+    <Property Name="TestisRt" Type="Boolean" />
+    <Property Name="Testislt" Type="Boolean" />
+    <Property Name="scroumRt" Type="Boolean" />
+    <Property Name="scroumLt" Type="Boolean" />
+    <Property Name="peqRt" Type="Boolean" />
+    <Property Name="preLt" Type="Boolean" />
+    <Property Name="others" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surg_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nationalty" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="government" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="husband" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="social_state" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ssi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="job" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="enter_date" Type="DateTime" Precision="3" />
+    <Property Name="doc_id" Type="Int32" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="weight" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="other" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="plus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Temp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Respiral" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BR2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BR1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diabetes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pregnancy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hepatitis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Asthma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="diac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Exammination">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="General" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kiduey" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uerter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Blodder" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="oeuis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ureqra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="peruerum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="scrotcum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uretiva" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="P_R" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prostate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pat_id" Type="Int32" />
+    <Property Name="pat_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="surgery_doctors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surgery_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="out_report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Report_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_report" Type="DateTime" Precision="3" />
+    <Property Name="medical_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="arrival_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="arrival_date" Type="DateTime" Precision="3" />
+    <Property Name="Medical_histoy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="physical_finding" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="operation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Rec_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Surgery_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="doc_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="assistant_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nursery_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surgeon_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diagnosis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="surgery_price" Type="Double" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="otherSurg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="operation_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="operation_done" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="trent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="previous_opeation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Drauis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tubes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stitches" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dressuis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cathers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stuits" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Prosthetic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="other_instruction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="period" Type="Double" />
+    <Property Name="Anaestusia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TypeSurg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,1516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EccoHospitalCopyModelStoreContainer" CdmEntityContainer="EccoHospitalEntities">
+    <EntitySetMapping Name="Acc_save">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Acc_save">
+        <MappingFragment StoreEntitySet="Acc_save">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="in_value" ColumnName="in_value" />
+          <ScalarProperty Name="out_value" ColumnName="out_value" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="doc_acc_id" ColumnName="doc_acc_id" />
+          <ScalarProperty Name="paylist_id" ColumnName="paylist_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="activation">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.activation">
+        <MappingFragment StoreEntitySet="activation">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="HMG" ColumnName="HMG" />
+          <ScalarProperty Name="FSH" ColumnName="FSH" />
+          <ScalarProperty Name="RT1" ColumnName="RT1" />
+          <ScalarProperty Name="RT2" ColumnName="RT2" />
+          <ScalarProperty Name="RT3" ColumnName="RT3" />
+          <ScalarProperty Name="RT4" ColumnName="RT4" />
+          <ScalarProperty Name="LT1" ColumnName="LT1" />
+          <ScalarProperty Name="LT2" ColumnName="LT2" />
+          <ScalarProperty Name="LT3" ColumnName="LT3" />
+          <ScalarProperty Name="LT4" ColumnName="LT4" />
+          <ScalarProperty Name="End_thickness" ColumnName="End_thickness" />
+          <ScalarProperty Name="End_pattern" ColumnName="End_pattern" />
+          <ScalarProperty Name="E2" ColumnName="E2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="add_list">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.add_list">
+        <MappingFragment StoreEntitySet="add_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="add_id" ColumnName="add_id" />
+          <ScalarProperty Name="add_name" ColumnName="add_name" />
+          <ScalarProperty Name="add_value" ColumnName="add_value" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="emp_name" ColumnName="emp_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="addition">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.addition">
+        <MappingFragment StoreEntitySet="addition">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bank">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.bank">
+        <MappingFragment StoreEntitySet="bank">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="account_num" ColumnName="account_num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bank_balance">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.bank_balance">
+        <MappingFragment StoreEntitySet="bank_balance">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="in_val" ColumnName="in_val" />
+          <ScalarProperty Name="out_val" ColumnName="out_val" />
+          <ScalarProperty Name="inc_id" ColumnName="inc_id" />
+          <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="category">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clinic">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.clinic">
+        <MappingFragment StoreEntitySet="clinic">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="price1" ColumnName="price1" />
+          <ScalarProperty Name="price2" ColumnName="price2" />
+          <ScalarProperty Name="price3" ColumnName="price3" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clinic_reception">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.clinic_reception">
+        <MappingFragment StoreEntitySet="clinic_reception">
+          <ScalarProperty Name="voidus" ColumnName="voidus" />
+          <ScalarProperty Name="post_mi" ColumnName="post_mi" />
+          <ScalarProperty Name="cong" ColumnName="cong" />
+          <ScalarProperty Name="others" ColumnName="others" />
+          <ScalarProperty Name="Emergency" ColumnName="Emergency" />
+          <ScalarProperty Name="ED" ColumnName="ED" />
+          <ScalarProperty Name="LUTS" ColumnName="LUTS" />
+          <ScalarProperty Name="UUTS" ColumnName="UUTS" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="datenow" ColumnName="datenow" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+          <ScalarProperty Name="Complaint" ColumnName="Complaint" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="printFlag" ColumnName="printFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clinic_time">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.clinic_time">
+        <MappingFragment StoreEntitySet="clinic_time">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fromm" ColumnName="fromm" />
+          <ScalarProperty Name="too" ColumnName="too" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="day_num" ColumnName="day_num" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="clinic_id" ColumnName="clinic_id" />
+          <ScalarProperty Name="clinic_name" ColumnName="clinic_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="percentage" ColumnName="percentage" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="departments">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.departments">
+        <MappingFragment StoreEntitySet="departments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepStock">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.DepStock">
+        <MappingFragment StoreEntitySet="DepStock">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="dep_name" ColumnName="dep_name" />
+          <ScalarProperty Name="prod_id" ColumnName="prod_id" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="destroy">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.destroy">
+        <MappingFragment StoreEntitySet="destroy">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+          <ScalarProperty Name="med_code" ColumnName="med_code" />
+          <ScalarProperty Name="med_name" ColumnName="med_name" />
+          <ScalarProperty Name="import_id" ColumnName="import_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="expirdate" ColumnName="expirdate" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="datenow" ColumnName="datenow" />
+          <ScalarProperty Name="sources" ColumnName="sources" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doctor_account">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.doctor_account">
+        <MappingFragment StoreEntitySet="doctor_account">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="in_val" ColumnName="in_val" />
+          <ScalarProperty Name="out_val" ColumnName="out_val" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="p_historyID" ColumnName="p_historyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="finger">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.finger">
+        <MappingFragment StoreEntitySet="finger">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="photoNo" ColumnName="photoNo" />
+          <ScalarProperty Name="enrollNo" ColumnName="enrollNo" />
+          <ScalarProperty Name="verifyMode" ColumnName="verifyMode" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="hourNum" ColumnName="hourNum" />
+          <ScalarProperty Name="shortmin" ColumnName="shortmin" />
+          <ScalarProperty Name="extramin" ColumnName="extramin" />
+          <ScalarProperty Name="shorth" ColumnName="shorth" />
+          <ScalarProperty Name="extrah" ColumnName="extrah" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="frozen_embryo">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.frozen_embryo">
+        <MappingFragment StoreEntitySet="frozen_embryo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="d1" ColumnName="d1" />
+          <ScalarProperty Name="d2" ColumnName="d2" />
+          <ScalarProperty Name="d3" ColumnName="d3" />
+          <ScalarProperty Name="d4" ColumnName="d4" />
+          <ScalarProperty Name="d5" ColumnName="d5" />
+          <ScalarProperty Name="d6" ColumnName="d6" />
+          <ScalarProperty Name="d7" ColumnName="d7" />
+          <ScalarProperty Name="d8" ColumnName="d8" />
+          <ScalarProperty Name="d9" ColumnName="d9" />
+          <ScalarProperty Name="d10" ColumnName="d10" />
+          <ScalarProperty Name="d11" ColumnName="d11" />
+          <ScalarProperty Name="d12" ColumnName="d12" />
+          <ScalarProperty Name="d13" ColumnName="d13" />
+          <ScalarProperty Name="d14" ColumnName="d14" />
+          <ScalarProperty Name="d15" ColumnName="d15" />
+          <ScalarProperty Name="d16" ColumnName="d16" />
+          <ScalarProperty Name="d17" ColumnName="d17" />
+          <ScalarProperty Name="d18" ColumnName="d18" />
+          <ScalarProperty Name="d19" ColumnName="d19" />
+          <ScalarProperty Name="d20" ColumnName="d20" />
+          <ScalarProperty Name="d21" ColumnName="d21" />
+          <ScalarProperty Name="d22" ColumnName="d22" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="es1" ColumnName="es1" />
+          <ScalarProperty Name="es2" ColumnName="es2" />
+          <ScalarProperty Name="es3" ColumnName="es3" />
+          <ScalarProperty Name="en1" ColumnName="en1" />
+          <ScalarProperty Name="en2" ColumnName="en2" />
+          <ScalarProperty Name="en3" ColumnName="en3" />
+          <ScalarProperty Name="in1" ColumnName="in1" />
+          <ScalarProperty Name="in2" ColumnName="in2" />
+          <ScalarProperty Name="in3" ColumnName="in3" />
+          <ScalarProperty Name="preg" ColumnName="preg" />
+          <ScalarProperty Name="preg_date" ColumnName="preg_date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hystroscopy">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.hystroscopy">
+        <MappingFragment StoreEntitySet="hystroscopy">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="Patserv_id" ColumnName="Patserv_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="clinic_diag" ColumnName="clinic_diag" />
+          <ScalarProperty Name="uterin_sounding" ColumnName="uterin_sounding" />
+          <ScalarProperty Name="intro" ColumnName="intro" />
+          <ScalarProperty Name="uterin_cavity" ColumnName="uterin_cavity" />
+          <ScalarProperty Name="endometrium" ColumnName="endometrium" />
+          <ScalarProperty Name="tubal" ColumnName="tubal" />
+          <ScalarProperty Name="distention" ColumnName="distention" />
+          <ScalarProperty Name="diag" ColumnName="diag" />
+          <ScalarProperty Name="paln" ColumnName="paln" />
+          <ScalarProperty Name="operative_notes" ColumnName="operative_notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="icsi_report">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.icsi_report">
+        <MappingFragment StoreEntitySet="icsi_report">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="protocol" ColumnName="protocol" />
+          <ScalarProperty Name="drugs" ColumnName="drugs" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="hcg" ColumnName="hcg" />
+          <ScalarProperty Name="coc" ColumnName="coc" />
+          <ScalarProperty Name="pr" ColumnName="pr" />
+          <ScalarProperty Name="np" ColumnName="np" />
+          <ScalarProperty Name="immotile" ColumnName="immotile" />
+          <ScalarProperty Name="ovm" ColumnName="ovm" />
+          <ScalarProperty Name="coc2" ColumnName="coc2" />
+          <ScalarProperty Name="m2" ColumnName="m2" />
+          <ScalarProperty Name="m1" ColumnName="m1" />
+          <ScalarProperty Name="gv" ColumnName="gv" />
+          <ScalarProperty Name="ez" ColumnName="ez" />
+          <ScalarProperty Name="injected" ColumnName="injected" />
+          <ScalarProperty Name="embryoT" ColumnName="embryoT" />
+          <ScalarProperty Name="embryoS" ColumnName="embryoS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="image">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.image">
+        <MappingFragment StoreEntitySet="image">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="typeLab" ColumnName="typeLab" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="import">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.import">
+        <MappingFragment StoreEntitySet="import">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="dis" ColumnName="dis" />
+          <ScalarProperty Name="total2" ColumnName="total2" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="idnum" ColumnName="idnum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="import_items">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.import_items">
+        <MappingFragment StoreEntitySet="import_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="imp_id" ColumnName="imp_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quatity" ColumnName="quatity" />
+          <ScalarProperty Name="min_quantity" ColumnName="min_quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="order_status" ColumnName="order_status" />
+          <ScalarProperty Name="ex_date" ColumnName="ex_date" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inject">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.inject">
+        <MappingFragment StoreEntitySet="inject">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="proced" ColumnName="proced" />
+          <ScalarProperty Name="protocol" ColumnName="protocol" />
+          <ScalarProperty Name="HMG_name" ColumnName="HMG_name" />
+          <ScalarProperty Name="FSH_name" ColumnName="FSH_name" />
+          <ScalarProperty Name="agonist" ColumnName="agonist" />
+          <ScalarProperty Name="antagonist" ColumnName="antagonist" />
+          <ScalarProperty Name="semen_source" ColumnName="semen_source" />
+          <ScalarProperty Name="Bmi" ColumnName="Bmi" />
+          <ScalarProperty Name="Fsh" ColumnName="Fsh" />
+          <ScalarProperty Name="LH" ColumnName="LH" />
+          <ScalarProperty Name="PRL" ColumnName="PRL" />
+          <ScalarProperty Name="TSH" ColumnName="TSH" />
+          <ScalarProperty Name="AMH" ColumnName="AMH" />
+          <ScalarProperty Name="APHL" ColumnName="APHL" />
+          <ScalarProperty Name="ANA" ColumnName="ANA" />
+          <ScalarProperty Name="ATA" ColumnName="ATA" />
+          <ScalarProperty Name="Rubella" ColumnName="Rubella" />
+          <ScalarProperty Name="HCV_HBV_AIDS" ColumnName="HCV_HBV_AIDS" />
+          <ScalarProperty Name="ABO" ColumnName="ABO" />
+          <ScalarProperty Name="RH" ColumnName="RH" />
+          <ScalarProperty Name="HB" ColumnName="HB" />
+          <ScalarProperty Name="PC" ColumnName="PC" />
+          <ScalarProperty Name="BT" ColumnName="BT" />
+          <ScalarProperty Name="CT" ColumnName="CT" />
+          <ScalarProperty Name="SGOT" ColumnName="SGOT" />
+          <ScalarProperty Name="SGPT" ColumnName="SGPT" />
+          <ScalarProperty Name="UREA" ColumnName="UREA" />
+          <ScalarProperty Name="CREATENIN" ColumnName="CREATENIN" />
+          <ScalarProperty Name="hbv" ColumnName="hbv" />
+          <ScalarProperty Name="aids" ColumnName="aids" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="invoice">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.invoice">
+        <MappingFragment StoreEntitySet="invoice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="dis" ColumnName="dis" />
+          <ScalarProperty Name="total2" ColumnName="total2" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="idnum" ColumnName="idnum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="invoice_items">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.invoice_items">
+        <MappingFragment StoreEntitySet="invoice_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="inv_id" ColumnName="inv_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="order_status" ColumnName="order_status" />
+          <ScalarProperty Name="ex_date" ColumnName="ex_date" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lab_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.lab_history">
+        <MappingFragment StoreEntitySet="lab_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="lab_id" ColumnName="lab_id" />
+          <ScalarProperty Name="lab_name" ColumnName="lab_name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="lab_result" ColumnName="lab_result" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="docNmae" ColumnName="docNmae" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="labb">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.labb">
+        <MappingFragment StoreEntitySet="labb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="laparoscopic">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.laparoscopic">
+        <MappingFragment StoreEntitySet="laparoscopic">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="PatServ_id" ColumnName="PatServ_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="anesthesia" ColumnName="anesthesia" />
+          <ScalarProperty Name="panoramic" ColumnName="panoramic" />
+          <ScalarProperty Name="uterus" ColumnName="uterus" />
+          <ScalarProperty Name="uterus_abnormal" ColumnName="uterus_abnormal" />
+          <ScalarProperty Name="uterus_adhesion" ColumnName="uterus_adhesion" />
+          <ScalarProperty Name="bladder" ColumnName="bladder" />
+          <ScalarProperty Name="LtTubes" ColumnName="LtTubes" />
+          <ScalarProperty Name="LtTubesComment" ColumnName="LtTubesComment" />
+          <ScalarProperty Name="LtOvary" ColumnName="LtOvary" />
+          <ScalarProperty Name="LtOvaryComment" ColumnName="LtOvaryComment" />
+          <ScalarProperty Name="LtOvarainFossa" ColumnName="LtOvarainFossa" />
+          <ScalarProperty Name="LtOvarainFossaComment" ColumnName="LtOvarainFossaComment" />
+          <ScalarProperty Name="RtTubes" ColumnName="RtTubes" />
+          <ScalarProperty Name="RtTubesComment" ColumnName="RtTubesComment" />
+          <ScalarProperty Name="RtOvary" ColumnName="RtOvary" />
+          <ScalarProperty Name="RtOvaryComment" ColumnName="RtOvaryComment" />
+          <ScalarProperty Name="RtOvarainFossa" ColumnName="RtOvarainFossa" />
+          <ScalarProperty Name="RtOvarainFossaComment" ColumnName="RtOvarainFossaComment" />
+          <ScalarProperty Name="douglas" ColumnName="douglas" />
+          <ScalarProperty Name="uterosacral" ColumnName="uterosacral" />
+          <ScalarProperty Name="operative" ColumnName="operative" />
+          <ScalarProperty Name="impression" ColumnName="impression" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loan">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.loan">
+        <MappingFragment StoreEntitySet="loan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="no_months" ColumnName="no_months" />
+          <ScalarProperty Name="lab_id" ColumnName="lab_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loan_installment">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.loan_installment">
+        <MappingFragment StoreEntitySet="loan_installment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loan_id" ColumnName="loan_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="payed" ColumnName="payed" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="lab_id" ColumnName="lab_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="medical_report">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.medical_report">
+        <MappingFragment StoreEntitySet="medical_report">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="rep_content" ColumnName="rep_content" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="medicin">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.medicin">
+        <MappingFragment StoreEntitySet="medicin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="buy_price" ColumnName="buy_price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="alert_qty" ColumnName="alert_qty" />
+          <ScalarProperty Name="alert_ex_date" ColumnName="alert_ex_date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="company" ColumnName="company" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="month_days">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.month_days">
+        <MappingFragment StoreEntitySet="month_days">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="workDays" ColumnName="workDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monthdetails">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.monthdetails">
+        <MappingFragment StoreEntitySet="monthdetails">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="shiftstring" ColumnName="shiftstring" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="come" ColumnName="come" />
+          <ScalarProperty Name="go" ColumnName="go" />
+          <ScalarProperty Name="attendhours" ColumnName="attendhours" />
+          <ScalarProperty Name="extrahour" ColumnName="extrahour" />
+          <ScalarProperty Name="shorthour" ColumnName="shorthour" />
+          <ScalarProperty Name="attentMintues" ColumnName="attentMintues" />
+          <ScalarProperty Name="extraMinutes" ColumnName="extraMinutes" />
+          <ScalarProperty Name="shortMinutes" ColumnName="shortMinutes" />
+          <ScalarProperty Name="dayNum" ColumnName="dayNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oberative_sheetTB">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.oberative_sheetTB">
+        <MappingFragment StoreEntitySet="oberative_sheetTB">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patiant_id" ColumnName="patiant_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Expected_Total_number" ColumnName="Expected_Total_number" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="media1" ColumnName="media1" />
+          <ScalarProperty Name="ICSI" ColumnName="ICSI" />
+          <ScalarProperty Name="media2" ColumnName="media2" />
+          <ScalarProperty Name="EZ" ColumnName="EZ" />
+          <ScalarProperty Name="GV" ColumnName="GV" />
+          <ScalarProperty Name="MI" ColumnName="MI" />
+          <ScalarProperty Name="MII" ColumnName="MII" />
+          <ScalarProperty Name="Quality" ColumnName="Quality" />
+          <ScalarProperty Name="Day2" ColumnName="Day2" />
+          <ScalarProperty Name="Day3" ColumnName="Day3" />
+          <ScalarProperty Name="Day4" ColumnName="Day4" />
+          <ScalarProperty Name="Day5" ColumnName="Day5" />
+          <ScalarProperty Name="DAy6" ColumnName="DAy6" />
+          <ScalarProperty Name="Date_transfer" ColumnName="Date_transfer" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Grades" ColumnName="Grades" />
+          <ScalarProperty Name="Catheter" ColumnName="Catheter" />
+          <ScalarProperty Name="Doctor_transfer" ColumnName="Doctor_transfer" />
+          <ScalarProperty Name="Day_of_freez_embryo" ColumnName="Day_of_freez_embryo" />
+          <ScalarProperty Name="Tank_embryo" ColumnName="Tank_embryo" />
+          <ScalarProperty Name="canister_embryo" ColumnName="canister_embryo" />
+          <ScalarProperty Name="code_embryo" ColumnName="code_embryo" />
+          <ScalarProperty Name="tube_embryo" ColumnName="tube_embryo" />
+          <ScalarProperty Name="color_embryo" ColumnName="color_embryo" />
+          <ScalarProperty Name="media_embryo" ColumnName="media_embryo" />
+          <ScalarProperty Name="doctor_embryo" ColumnName="doctor_embryo" />
+          <ScalarProperty Name="notes_embryo" ColumnName="notes_embryo" />
+          <ScalarProperty Name="Day_of_freez_analysis" ColumnName="Day_of_freez_analysis" />
+          <ScalarProperty Name="Tank_analysis" ColumnName="Tank_analysis" />
+          <ScalarProperty Name="canister_analysis" ColumnName="canister_analysis" />
+          <ScalarProperty Name="code_analysis" ColumnName="code_analysis" />
+          <ScalarProperty Name="tube_analysis" ColumnName="tube_analysis" />
+          <ScalarProperty Name="color_analysis" ColumnName="color_analysis" />
+          <ScalarProperty Name="media_analysis" ColumnName="media_analysis" />
+          <ScalarProperty Name="doctor_analysis" ColumnName="doctor_analysis" />
+          <ScalarProperty Name="notes_analysis" ColumnName="notes_analysis" />
+          <ScalarProperty Name="out_come" ColumnName="out_come" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="del" ColumnName="del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient_services">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.patient_services">
+        <MappingFragment StoreEntitySet="patient_services">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="service_name" ColumnName="service_name" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="flage" ColumnName="flage" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="diag" ColumnName="diag" />
+          <ScalarProperty Name="blood" ColumnName="blood" />
+          <ScalarProperty Name="lmp" ColumnName="lmp" />
+          <ScalarProperty Name="edd" ColumnName="edd" />
+          <ScalarProperty Name="no_follicleRT" ColumnName="no_follicleRT" />
+          <ScalarProperty Name="no_follicleLT" ColumnName="no_follicleLT" />
+          <ScalarProperty Name="size_follicleRT" ColumnName="size_follicleRT" />
+          <ScalarProperty Name="size_follicleLT" ColumnName="size_follicleLT" />
+          <ScalarProperty Name="endo" ColumnName="endo" />
+          <ScalarProperty Name="otherRT" ColumnName="otherRT" />
+          <ScalarProperty Name="otherLT" ColumnName="otherLT" />
+          <ScalarProperty Name="wks" ColumnName="wks" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="fwt" ColumnName="fwt" />
+          <ScalarProperty Name="other" ColumnName="other" />
+          <ScalarProperty Name="hb" ColumnName="hb" />
+          <ScalarProperty Name="rbs" ColumnName="rbs" />
+          <ScalarProperty Name="num" ColumnName="num" />
+          <ScalarProperty Name="come" ColumnName="come" />
+          <ScalarProperty Name="enter" ColumnName="enter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payementList">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.payementList">
+        <MappingFragment StoreEntitySet="payementList">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rad">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.rad">
+        <MappingFragment StoreEntitySet="rad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rad_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.rad_history">
+        <MappingFragment StoreEntitySet="rad_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="rad_id" ColumnName="rad_id" />
+          <ScalarProperty Name="rad_name" ColumnName="rad_name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="rad_result" ColumnName="rad_result" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="docNmae" ColumnName="docNmae" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rel_patient">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Rel_patient">
+        <MappingFragment StoreEntitySet="Rel_patient">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="national_id" ColumnName="national_id" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="Rel_num" ColumnName="Rel_num" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="return_items">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.return_items">
+        <MappingFragment StoreEntitySet="return_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="return_id" ColumnName="return_id" />
+          <ScalarProperty Name="prod_code" ColumnName="prod_code" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="ex_date" ColumnName="ex_date" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="return_items2">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.return_items2">
+        <MappingFragment StoreEntitySet="return_items2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="return_id" ColumnName="return_id" />
+          <ScalarProperty Name="prod_code" ColumnName="prod_code" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="ex_date" ColumnName="ex_date" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="returninv">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.returninv">
+        <MappingFragment StoreEntitySet="returninv">
+          <ScalarProperty Name="idnum" ColumnName="idnum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="inv_id" ColumnName="inv_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="returninv2">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.returninv2">
+        <MappingFragment StoreEntitySet="returninv2">
+          <ScalarProperty Name="idnum" ColumnName="idnum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="imp_id" ColumnName="imp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="room">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.room">
+        <MappingFragment StoreEntitySet="room">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="datenow" ColumnName="datenow" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="room_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.room_history">
+        <MappingFragment StoreEntitySet="room_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="room_id" ColumnName="room_id" />
+          <ScalarProperty Name="room_name" ColumnName="room_name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="from_date" ColumnName="from_date" />
+          <ScalarProperty Name="to_date" ColumnName="to_date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="dev_val" ColumnName="dev_val" />
+          <ScalarProperty Name="enter_val" ColumnName="enter_val" />
+          <ScalarProperty Name="total_val" ColumnName="total_val" />
+          <ScalarProperty Name="medical_care" ColumnName="medical_care" />
+          <ScalarProperty Name="nursery_service" ColumnName="nursery_service" />
+          <ScalarProperty Name="artificialBreath_val" ColumnName="artificialBreath_val" />
+          <ScalarProperty Name="treat_val" ColumnName="treat_val" />
+          <ScalarProperty Name="foto_val" ColumnName="foto_val" />
+          <ScalarProperty Name="oxcegin_val" ColumnName="oxcegin_val" />
+          <ScalarProperty Name="blood_change_val" ColumnName="blood_change_val" />
+          <ScalarProperty Name="xray_val" ColumnName="xray_val" />
+          <ScalarProperty Name="lab_val" ColumnName="lab_val" />
+          <ScalarProperty Name="admistrations_val" ColumnName="admistrations_val" />
+          <ScalarProperty Name="care_val" ColumnName="care_val" />
+          <ScalarProperty Name="insurance_val" ColumnName="insurance_val" />
+          <ScalarProperty Name="reminder_val" ColumnName="reminder_val" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sanc_list">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.sanc_list">
+        <MappingFragment StoreEntitySet="sanc_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_name" ColumnName="emp_name" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="sanc_id" ColumnName="sanc_id" />
+          <ScalarProperty Name="sanc_value" ColumnName="sanc_value" />
+          <ScalarProperty Name="sanc_name" ColumnName="sanc_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sanctions">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.sanctions">
+        <MappingFragment StoreEntitySet="sanctions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="savee">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.savee">
+        <MappingFragment StoreEntitySet="savee">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="in_value" ColumnName="in_value" />
+          <ScalarProperty Name="out_value" ColumnName="out_value" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="paylist_id" ColumnName="paylist_id" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="session_med">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.session_med">
+        <MappingFragment StoreEntitySet="session_med">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Clinic_RecID" ColumnName="Clinic_RecID" />
+          <ScalarProperty Name="TypeService" ColumnName="TypeService" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="printFlag" ColumnName="printFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stadd">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.stadd">
+        <MappingFragment StoreEntitySet="stadd">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idnum" ColumnName="idnum" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stadd_items">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.stadd_items">
+        <MappingFragment StoreEntitySet="stadd_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="prod_id" ColumnName="prod_id" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="inv_id" ColumnName="inv_id" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="totalprice" ColumnName="totalprice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stock_destroy">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.stock_destroy">
+        <MappingFragment StoreEntitySet="stock_destroy">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="prod_id" ColumnName="prod_id" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="dep_id" ColumnName="dep_id" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="dep_name" ColumnName="dep_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stocks">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.stocks">
+        <MappingFragment StoreEntitySet="stocks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="alert_qty" ColumnName="alert_qty" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="cate_name" ColumnName="cate_name" />
+          <ScalarProperty Name="dest_time" ColumnName="dest_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticket">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="out_date" ColumnName="out_date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="Rel_id" ColumnName="Rel_id" />
+          <ScalarProperty Name="Company_id" ColumnName="Company_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="typeticket" ColumnName="typeticket" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticket_out">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.ticket_out">
+        <MappingFragment StoreEntitySet="ticket_out">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transfer">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.transfer">
+        <MappingFragment StoreEntitySet="transfer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="treat">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.treat">
+        <MappingFragment StoreEntitySet="treat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="treatment">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.treatment">
+        <MappingFragment StoreEntitySet="treatment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="order_status" ColumnName="order_status" />
+          <ScalarProperty Name="ex_date" ColumnName="ex_date" />
+          <ScalarProperty Name="med_id" ColumnName="med_id" />
+          <ScalarProperty Name="ticket_id" ColumnName="ticket_id" />
+          <ScalarProperty Name="dep_id" ColumnName="dep_id" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="prod_id" ColumnName="prod_id" />
+          <ScalarProperty Name="datenow" ColumnName="datenow" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="priv" ColumnName="priv" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="use_name" ColumnName="use_name" />
+          <ScalarProperty Name="clinic_id" ColumnName="clinic_id" />
+          <ScalarProperty Name="clinic_name" ColumnName="clinic_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doctor">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.doctor">
+        <MappingFragment StoreEntitySet="doctor">
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="F_perc" ColumnName="F_perc" />
+          <ScalarProperty Name="T_perc" ColumnName="T_perc" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="service">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.service">
+        <MappingFragment StoreEntitySet="service">
+          <ScalarProperty Name="serType" ColumnName="serType" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cong_Anthio">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.cong_Anthio">
+        <MappingFragment StoreEntitySet="cong_Anthio">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="others" ColumnName="others" />
+          <ScalarProperty Name="undescTesties" ColumnName="undescTesties" />
+          <ScalarProperty Name="Epispadias" ColumnName="Epispadias" />
+          <ScalarProperty Name="Hypospodias" ColumnName="Hypospodias" />
+          <ScalarProperty Name="LUT" ColumnName="LUT" />
+          <ScalarProperty Name="UUT" ColumnName="UUT" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ED">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.ED">
+        <MappingFragment StoreEntitySet="ED">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="EDISS" ColumnName="EDISS" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emagercy">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Emagercy">
+        <MappingFragment StoreEntitySet="Emagercy">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="other" ColumnName="other" />
+          <ScalarProperty Name="Trauua" ColumnName="Trauua" />
+          <ScalarProperty Name="inFlection" ColumnName="inFlection" />
+          <ScalarProperty Name="Gaugleue" ColumnName="Gaugleue" />
+          <ScalarProperty Name="Torsion" ColumnName="Torsion" />
+          <ScalarProperty Name="pria_pism" ColumnName="pria_pism" />
+          <ScalarProperty Name="Ueeuia" ColumnName="Ueeuia" />
+          <ScalarProperty Name="uiy_Hydronc" ColumnName="uiy_Hydronc" />
+          <ScalarProperty Name="anuria" ColumnName="anuria" />
+          <ScalarProperty Name="Ret" ColumnName="Ret" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Family_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Family_history">
+        <MappingFragment StoreEntitySet="Family_history">
+          <ScalarProperty Name="other" ColumnName="other" />
+          <ScalarProperty Name="Medical_equal_diseases" ColumnName="Medical_equal_diseases" />
+          <ScalarProperty Name="statues" ColumnName="statues" />
+          <ScalarProperty Name="coucer_prostat" ColumnName="coucer_prostat" />
+          <ScalarProperty Name="coucel" ColumnName="coucel" />
+          <ScalarProperty Name="Hypiteusini" ColumnName="Hypiteusini" />
+          <ScalarProperty Name="Diabets" ColumnName="Diabets" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LUTS">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.LUTS">
+        <MappingFragment StoreEntitySet="LUTS">
+          <ScalarProperty Name="txt" ColumnName="txt" />
+          <ScalarProperty Name="rec_id" ColumnName="rec_id" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="True" ColumnName="True" />
+          <ScalarProperty Name="Lugluge" ColumnName="Lugluge" />
+          <ScalarProperty Name="Stress" ColumnName="Stress" />
+          <ScalarProperty Name="Lu_contineuce" ColumnName="Lu_contineuce" />
+          <ScalarProperty Name="Urgucy" ColumnName="Urgucy" />
+          <ScalarProperty Name="No_Cuturia" ColumnName="No_Cuturia" />
+          <ScalarProperty Name="Frequercy" ColumnName="Frequercy" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="others">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.others">
+        <MappingFragment StoreEntitySet="others">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="othertxt" ColumnName="othertxt" />
+          <ScalarProperty Name="aual_pain" ColumnName="aual_pain" />
+          <ScalarProperty Name="shinus" ColumnName="shinus" />
+          <ScalarProperty Name="Fistula" ColumnName="Fistula" />
+          <ScalarProperty Name="Dischosage" ColumnName="Dischosage" />
+          <ScalarProperty Name="Uruil_change" ColumnName="Uruil_change" />
+          <ScalarProperty Name="Feuer" ColumnName="Feuer" />
+          <ScalarProperty Name="pain" ColumnName="pain" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="past_History">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.past_History">
+        <MappingFragment StoreEntitySet="past_History">
+          <ScalarProperty Name="others" ColumnName="others" />
+          <ScalarProperty Name="candiac_Stuiet" ColumnName="candiac_Stuiet" />
+          <ScalarProperty Name="Astiua" ColumnName="Astiua" />
+          <ScalarProperty Name="Ischluic_ttt" ColumnName="Ischluic_ttt" />
+          <ScalarProperty Name="cancer" ColumnName="cancer" />
+          <ScalarProperty Name="Hypenteus" ColumnName="Hypenteus" />
+          <ScalarProperty Name="Diabetes" ColumnName="Diabetes" />
+          <ScalarProperty Name="TB" ColumnName="TB" />
+          <ScalarProperty Name="Traunua" ColumnName="Traunua" />
+          <ScalarProperty Name="operatient" ColumnName="operatient" />
+          <ScalarProperty Name="stones" ColumnName="stones" />
+          <ScalarProperty Name="smorokus" ColumnName="smorokus" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="post_micturation">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.post_micturation">
+        <MappingFragment StoreEntitySet="post_micturation">
+          <ScalarProperty Name="txt" ColumnName="txt" />
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="post_micturation_drippliz" ColumnName="post_micturation_drippliz" />
+          <ScalarProperty Name="Feeling_uicomplete_En" ColumnName="Feeling_uicomplete_En" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stream_options">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Stream_options">
+        <MappingFragment StoreEntitySet="Stream_options">
+          <ScalarProperty Name="liten_mitteut" ColumnName="liten_mitteut" />
+          <ScalarProperty Name="Splithlis" ColumnName="Splithlis" />
+          <ScalarProperty Name="slow" ColumnName="slow" />
+          <ScalarProperty Name="StreamId" ColumnName="StreamId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UTS">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.UTS">
+        <MappingFragment StoreEntitySet="UTS">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="txt" ColumnName="txt" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="Heuiaturia" ColumnName="Heuiaturia" />
+          <ScalarProperty Name="pain" ColumnName="pain" />
+          <ScalarProperty Name="Mass" ColumnName="Mass" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Voidues">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Voidues">
+        <MappingFragment StoreEntitySet="Voidues">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="txt" ColumnName="txt" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="Tesmul_drippluis" ColumnName="Tesmul_drippluis" />
+          <ScalarProperty Name="Strauius" ColumnName="Strauius" />
+          <ScalarProperty Name="Hesitoucy" ColumnName="Hesitoucy" />
+          <ScalarProperty Name="stream" ColumnName="stream" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.patient_history">
+        <MappingFragment StoreEntitySet="patient_history">
+          <ScalarProperty Name="unit_val" ColumnName="unit_val" />
+          <ScalarProperty Name="main_val" ColumnName="main_val" />
+          <ScalarProperty Name="serTypee" ColumnName="serTypee" />
+          <ScalarProperty Name="doc_value" ColumnName="doc_value" />
+          <ScalarProperty Name="hos_value" ColumnName="hos_value" />
+          <ScalarProperty Name="confirm_calc" ColumnName="confirm_calc" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="details_id" ColumnName="details_id" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="service_name" ColumnName="service_name" />
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doctor_services">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.doctor_services">
+        <MappingFragment StoreEntitySet="doctor_services">
+          <ScalarProperty Name="pricce" ColumnName="pricce" />
+          <ScalarProperty Name="doctorId" ColumnName="doctorId" />
+          <ScalarProperty Name="serviceId" ColumnName="serviceId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sites">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.sites">
+        <MappingFragment StoreEntitySet="sites">
+          <ScalarProperty Name="surg_id" ColumnName="surg_id" />
+          <ScalarProperty Name="others" ColumnName="others" />
+          <ScalarProperty Name="preLt" ColumnName="preLt" />
+          <ScalarProperty Name="peqRt" ColumnName="peqRt" />
+          <ScalarProperty Name="scroumLt" ColumnName="scroumLt" />
+          <ScalarProperty Name="scroumRt" ColumnName="scroumRt" />
+          <ScalarProperty Name="Testislt" ColumnName="Testislt" />
+          <ScalarProperty Name="TestisRt" ColumnName="TestisRt" />
+          <ScalarProperty Name="Peuilelt" ColumnName="Peuilelt" />
+          <ScalarProperty Name="PeuileRt" ColumnName="PeuileRt" />
+          <ScalarProperty Name="Blodderlt" ColumnName="Blodderlt" />
+          <ScalarProperty Name="BlodderRt" ColumnName="BlodderRt" />
+          <ScalarProperty Name="Ureterlt" ColumnName="Ureterlt" />
+          <ScalarProperty Name="UreterRt" ColumnName="UreterRt" />
+          <ScalarProperty Name="kindlylt" ColumnName="kindlylt" />
+          <ScalarProperty Name="kindlyRt" ColumnName="kindlyRt" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.patient">
+        <MappingFragment StoreEntitySet="patient">
+          <ScalarProperty Name="diac" ColumnName="diac" />
+          <ScalarProperty Name="Asthma" ColumnName="Asthma" />
+          <ScalarProperty Name="hepatitis" ColumnName="hepatitis" />
+          <ScalarProperty Name="pregnancy" ColumnName="pregnancy" />
+          <ScalarProperty Name="Diabetes" ColumnName="Diabetes" />
+          <ScalarProperty Name="BR1" ColumnName="BR1" />
+          <ScalarProperty Name="BR2" ColumnName="BR2" />
+          <ScalarProperty Name="Respiral" ColumnName="Respiral" />
+          <ScalarProperty Name="Temp" ColumnName="Temp" />
+          <ScalarProperty Name="plus" ColumnName="plus" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="other" ColumnName="other" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="enter_date" ColumnName="enter_date" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="job" ColumnName="job" />
+          <ScalarProperty Name="ssi" ColumnName="ssi" />
+          <ScalarProperty Name="social_state" ColumnName="social_state" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="husband" ColumnName="husband" />
+          <ScalarProperty Name="government" ColumnName="government" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="nationalty" ColumnName="nationalty" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exammination">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Exammination">
+        <MappingFragment StoreEntitySet="Exammination">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="pat_name" ColumnName="pat_name" />
+          <ScalarProperty Name="pat_id" ColumnName="pat_id" />
+          <ScalarProperty Name="prostate" ColumnName="prostate" />
+          <ScalarProperty Name="P_R" ColumnName="P/R" />
+          <ScalarProperty Name="uretiva" ColumnName="uretiva" />
+          <ScalarProperty Name="scrotcum" ColumnName="scrotcum" />
+          <ScalarProperty Name="peruerum" ColumnName="peruerum" />
+          <ScalarProperty Name="Ureqra" ColumnName="Ureqra" />
+          <ScalarProperty Name="oeuis" ColumnName="oeuis" />
+          <ScalarProperty Name="Blodder" ColumnName="Blodder" />
+          <ScalarProperty Name="uerter" ColumnName="uerter" />
+          <ScalarProperty Name="Kiduey" ColumnName="Kiduey" />
+          <ScalarProperty Name="General" ColumnName="General" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="surgery_doctors">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.surgery_doctors">
+        <MappingFragment StoreEntitySet="surgery_doctors">
+          <ScalarProperty Name="surgery_type" ColumnName="surgery_type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="out_report">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.out_report">
+        <MappingFragment StoreEntitySet="out_report">
+          <ScalarProperty Name="Rec_id" ColumnName="Rec_id" />
+          <ScalarProperty Name="operation" ColumnName="operation" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="physical_finding" ColumnName="physical_finding" />
+          <ScalarProperty Name="Medical_histoy" ColumnName="Medical_histoy" />
+          <ScalarProperty Name="arrival_date" ColumnName="arrival_date" />
+          <ScalarProperty Name="arrival_type" ColumnName="arrival_type" />
+          <ScalarProperty Name="medical_no" ColumnName="medical_no" />
+          <ScalarProperty Name="date_report" ColumnName="date_report" />
+          <ScalarProperty Name="Report_no" ColumnName="Report_no" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Surgery_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.Surgery_history">
+        <MappingFragment StoreEntitySet="Surgery_history">
+          <ScalarProperty Name="TypeSurg" ColumnName="TypeSurg" />
+          <ScalarProperty Name="Anaestusia" ColumnName="Anaestusia" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="other_instruction" ColumnName="other_instruction" />
+          <ScalarProperty Name="Prosthetic" ColumnName="Prosthetic" />
+          <ScalarProperty Name="stuits" ColumnName="stuits" />
+          <ScalarProperty Name="cathers" ColumnName="cathers" />
+          <ScalarProperty Name="Dressuis" ColumnName="Dressuis" />
+          <ScalarProperty Name="stitches" ColumnName="stitches" />
+          <ScalarProperty Name="Tubes" ColumnName="Tubes" />
+          <ScalarProperty Name="Drauis" ColumnName="Drauis" />
+          <ScalarProperty Name="previous_opeation" ColumnName="previous_opeation" />
+          <ScalarProperty Name="trent" ColumnName="trent" />
+          <ScalarProperty Name="operation_done" ColumnName="operation_done" />
+          <ScalarProperty Name="operation_description" ColumnName="operation_description" />
+          <ScalarProperty Name="otherSurg" ColumnName="otherSurg" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="surgery_price" ColumnName="surgery_price" />
+          <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+          <ScalarProperty Name="surgeon_name" ColumnName="surgeon_name" />
+          <ScalarProperty Name="Nursery_name" ColumnName="Nursery_name" />
+          <ScalarProperty Name="assistant_name" ColumnName="assistant_name" />
+          <ScalarProperty Name="doc_name" ColumnName="doc_name" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.device">
+        <MappingFragment StoreEntitySet="device">
+          <ScalarProperty Name="date_now" ColumnName="date_now" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="device_history">
+      <EntityTypeMapping TypeName="EccoHospitalCopyModel.device_history">
+        <MappingFragment StoreEntitySet="device_history">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="device_name" ColumnName="device_name" />
+          <ScalarProperty Name="device_id" ColumnName="device_id" />
+          <ScalarProperty Name="surgery_id" ColumnName="surgery_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

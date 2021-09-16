@@ -1,0 +1,260 @@
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\ApplicationInsights.config
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\csc.exe
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\System.Collections.Immutable.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\System.Reflection.Metadata.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\vbc.exe
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\VBCSCompiler.exe
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\roslyn\VBCSCompiler.exe.config
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EccoHospital.dll.config
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EccoHospital.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EccoHospital.pdb
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportSource.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.Shared.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.Web.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EntityFramework.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EntityFramework.SqlServer.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.DependencyCollector.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.Web.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.WindowsServer.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.ApplicationInsights.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\stdole.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EntityFramework.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\EntityFramework.SqlServer.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.DependencyCollector.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.Web.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.AI.WindowsServer.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.ApplicationInsights.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\obj\Release\EccoHospital.csprojResolveAssemblyReference.cache
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\obj\Release\EccoHospital.dll
+E:\Dropbox\ecco marketing team folder\CopyElrahma\Final\EccoHospital\EccoHospital\obj\Release\EccoHospital.pdb
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\ApplicationInsights.config
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\csc.exe
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\vbc.exe
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EccoHospital.dll.config
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EccoHospital.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EccoHospital.pdb
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.Shared.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.Web.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EntityFramework.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EntityFramework.SqlServer.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.Web.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\stdole.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EntityFramework.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\EntityFramework.SqlServer.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.Web.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\obj\Release\EccoHospital.csprojResolveAssemblyReference.cache
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\obj\Release\EccoHospital.dll
+C:\Users\Hend\Documents\MEGA\academy\EccoHospital\obj\Release\EccoHospital.pdb
+H:\academy\EccoHospital\bin\ApplicationInsights.config
+H:\academy\EccoHospital\bin\roslyn\csc.exe
+H:\academy\EccoHospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\academy\EccoHospital\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\academy\EccoHospital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\academy\EccoHospital\bin\roslyn\System.Collections.Immutable.dll
+H:\academy\EccoHospital\bin\roslyn\System.Reflection.Metadata.dll
+H:\academy\EccoHospital\bin\roslyn\vbc.exe
+H:\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe
+H:\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe.config
+H:\academy\EccoHospital\bin\EccoHospital.dll.config
+H:\academy\EccoHospital\bin\EccoHospital.dll
+H:\academy\EccoHospital\bin\EccoHospital.pdb
+H:\academy\EccoHospital\bin\CrystalDecisions.CrystalReports.Engine.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportSource.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.Shared.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.Web.dll
+H:\academy\EccoHospital\bin\EntityFramework.dll
+H:\academy\EccoHospital\bin\EntityFramework.SqlServer.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.Agent.Intercept.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.Web.dll
+H:\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.dll
+H:\academy\EccoHospital\bin\Microsoft.ApplicationInsights.dll
+H:\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+H:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+H:\academy\EccoHospital\bin\stdole.dll
+H:\academy\EccoHospital\bin\EntityFramework.xml
+H:\academy\EccoHospital\bin\EntityFramework.SqlServer.xml
+H:\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.xml
+H:\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\academy\EccoHospital\bin\Microsoft.AI.Web.xml
+H:\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.xml
+H:\academy\EccoHospital\bin\Microsoft.ApplicationInsights.xml
+H:\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\academy\EccoHospital\obj\Release\EccoHospital.csprojResolveAssemblyReference.cache
+H:\academy\EccoHospital\obj\Release\EccoHospital.dll
+H:\academy\EccoHospital\obj\Release\EccoHospital.pdb
+E:\academy\EccoHospital\bin\ApplicationInsights.config
+E:\academy\EccoHospital\bin\roslyn\csc.exe
+E:\academy\EccoHospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\academy\EccoHospital\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\academy\EccoHospital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\academy\EccoHospital\bin\roslyn\System.Collections.Immutable.dll
+E:\academy\EccoHospital\bin\roslyn\System.Reflection.Metadata.dll
+E:\academy\EccoHospital\bin\roslyn\vbc.exe
+E:\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe
+E:\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe.config
+E:\academy\EccoHospital\bin\EccoHospital.dll.config
+E:\academy\EccoHospital\bin\EccoHospital.dll
+E:\academy\EccoHospital\bin\EccoHospital.pdb
+E:\academy\EccoHospital\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportSource.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.Shared.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.Web.dll
+E:\academy\EccoHospital\bin\EntityFramework.dll
+E:\academy\EccoHospital\bin\EntityFramework.SqlServer.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.Agent.Intercept.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.Web.dll
+E:\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.dll
+E:\academy\EccoHospital\bin\Microsoft.ApplicationInsights.dll
+E:\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\academy\EccoHospital\bin\stdole.dll
+E:\academy\EccoHospital\bin\EntityFramework.xml
+E:\academy\EccoHospital\bin\EntityFramework.SqlServer.xml
+E:\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.xml
+E:\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\academy\EccoHospital\bin\Microsoft.AI.Web.xml
+E:\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.xml
+E:\academy\EccoHospital\bin\Microsoft.ApplicationInsights.xml
+E:\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\academy\EccoHospital\obj\Release\EccoHospital.csprojResolveAssemblyReference.cache
+E:\academy\EccoHospital\obj\Release\EccoHospital.dll
+E:\academy\EccoHospital\obj\Release\EccoHospital.pdb
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\ApplicationInsights.config
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\csc.exe
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\vbc.exe
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EccoHospital.dll.config
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EccoHospital.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EccoHospital.pdb
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.Shared.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.Web.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EntityFramework.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EntityFramework.SqlServer.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.Web.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\stdole.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EntityFramework.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\EntityFramework.SqlServer.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.Web.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\obj\Release\EccoHospital.csprojResolveAssemblyReference.cache
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\obj\Release\EccoHospital.dll
+C:\Users\Hend\Documents\MEGA\New folder\academy\EccoHospital\obj\Release\EccoHospital.pdb

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a448bd4c45264c1a80d894c53f5b9011" Name="Diagram1" ZoomLevel="57">
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Acc_save" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.activation" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.add_list" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.addition" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.bank" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.bank_balance" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.category" Width="1.5" PointX="4.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.clinic" Width="1.5" PointX="9.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.clinic_reception" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.clinic_time" Width="1.5" PointX="10" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.company" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.departments" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.DepStock" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.destroy" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.doctor_account" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.finger" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.frozen_embryo" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.hystroscopy" Width="1.5" PointX="4.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.icsi_report" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.image" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.import" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.import_items" Width="1.5" PointX="14.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.inject" Width="1.5" PointX="16.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.invoice" Width="1.5" PointX="6.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.invoice_items" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.lab_history" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.labb" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.laparoscopic" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.loan" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.loan_installment" Width="1.5" PointX="8.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.medical_report" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.medicin" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.month_days" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.monthdetails" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.oberative_sheetTB" Width="1.5" PointX="10.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.patient_services" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.payementList" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.rad" Width="1.5" PointX="22.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.rad_history" Width="1.5" PointX="6.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Rel_patient" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.return_items" Width="1.5" PointX="24.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.return_items2" Width="1.5" PointX="24.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.returninv" Width="1.5" PointX="24.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.returninv2" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.room" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.room_history" Width="1.5" PointX="24.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.sanc_list" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.sanctions" Width="1.5" PointX="26.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.savee" Width="1.5" PointX="26.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.session_med" Width="1.5" PointX="26.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.stadd" Width="1.5" PointX="20.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.stadd_items" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.stock_destroy" Width="1.5" PointX="26.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.stocks" Width="1.5" PointX="16.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.ticket" Width="1.5" PointX="4.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.ticket_out" Width="1.5" PointX="6.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.transfer" Width="1.5" PointX="28.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.treat" Width="1.5" PointX="28.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.treatment" Width="1.5" PointX="28.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.user" Width="1.5" PointX="28.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.doctor" Width="1.5" PointX="0.75" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.service" Width="1.5" PointX="19.375" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.cong_Anthio" Width="1.5" PointX="21.375" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.ED" Width="1.5" PointX="23.375" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Emagercy" Width="1.5" PointX="25.375" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Family_history" Width="1.5" PointX="31.375" PointY="0.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.LUTS" Width="1.5" PointX="31.375" PointY="4.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.others" Width="1.5" PointX="31.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.past_History" Width="1.5" PointX="9.375" PointY="31.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.post_micturation" Width="1.5" PointX="31.375" PointY="12.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Stream_options" Width="1.5" PointX="31.375" PointY="15.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.UTS" Width="1.5" PointX="15.375" PointY="31.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Voidues" Width="1.5" PointX="31.375" PointY="18.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.patient_history" Width="1.5" PointX="7.375" PointY="3.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.doctor_services" Width="1.5" PointX="7.375" PointY="9.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.sites" Width="1.5" PointX="19.375" PointY="20.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.patient" Width="1.5" PointX="21.375" PointY="15.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Exammination" Width="1.5" PointX="27.375" PointY="29.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.surgery_doctors" Width="1.5" PointX="3.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.out_report" Width="1.5" PointX="9.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EccoHospitalCopyModel.Surgery_history" Width="1.5" PointX="12.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
