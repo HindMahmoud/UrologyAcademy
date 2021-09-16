@@ -836,17 +836,6 @@
     <Content Include="dist\js\moment.min.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
-    <Content Include="External Clinics\activate.aspx" />
-    <Content Include="External Clinics\addhysteroscopy.aspx" />
-    <Content Include="External Clinics\addlaparoscopic.aspx" />
-    <Content Include="External Clinics\addpatient.aspx" />
-    <Content Include="External Clinics\FrozenEmpryo.aspx" />
-    <Content Include="External Clinics\IcsI_Report.aspx" />
-    <Content Include="External Clinics\index.aspx" />
-    <Content Include="External Clinics\Medical_Report.aspx" />
-    <Content Include="External Clinics\profile.aspx" />
-    <Content Include="External Clinics\Profile2.aspx" />
-    <Content Include="External Clinics\ReportReserveClinic.aspx" />
     <Content Include="img\academy.png" />
     <Content Include="img\heroe.png" />
     <Content Include="img\log.png" />
@@ -1021,7 +1010,6 @@
     <Content Include="dist\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.ttf" />
     <Content Include="dist\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.woff" />
     <Content Include="dist\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.woff2" />
-    <Content Include="External Clinics\MasterPage.master" />
     <Content Include="Accountant\Home.Master" />
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2196,132 +2184,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="External Clinics\activate.aspx.cs">
-      <DependentUpon>activate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\activate.aspx.designer.cs">
-      <DependentUpon>activate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\activationR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>activationR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\addhysteroscopy.aspx.cs">
-      <DependentUpon>addhysteroscopy.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\addhysteroscopy.aspx.designer.cs">
-      <DependentUpon>addhysteroscopy.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\addlaparoscopic.aspx.cs">
-      <DependentUpon>addlaparoscopic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\addlaparoscopic.aspx.designer.cs">
-      <DependentUpon>addlaparoscopic.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\addpatient.aspx.cs">
-      <DependentUpon>addpatient.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\addpatient.aspx.designer.cs">
-      <DependentUpon>addpatient.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\FrozenEmpryo.aspx.cs">
-      <DependentUpon>FrozenEmpryo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\FrozenEmpryo.aspx.designer.cs">
-      <DependentUpon>FrozenEmpryo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\FrozenR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FrozenR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\HysteroscopyR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HysteroscopyR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\IcsiR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IcsiR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\IcsI_Report.aspx.cs">
-      <DependentUpon>IcsI_Report.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\IcsI_Report.aspx.designer.cs">
-      <DependentUpon>IcsI_Report.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\laparoscopicR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>laparoscopicR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\MasterPage.master.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\MasterPage.master.designer.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\medicalR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>medicalR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\Medical_Report.aspx.cs">
-      <DependentUpon>Medical_Report.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\Medical_Report.aspx.designer.cs">
-      <DependentUpon>Medical_Report.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\oberative_sheetRPT.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>oberative_sheetRPT.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="External Clinics\profile.aspx.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\profile.aspx.designer.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\Profile2.aspx.cs">
-      <DependentUpon>Profile2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\Profile2.aspx.designer.cs">
-      <DependentUpon>Profile2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\ReportReserveClinic.aspx.cs">
-      <DependentUpon>ReportReserveClinic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="External Clinics\ReportReserveClinic.aspx.designer.cs">
-      <DependentUpon>ReportReserveClinic.aspx</DependentUpon>
-    </Compile>
     <Compile Include="lab\labprofile.aspx.cs">
       <DependentUpon>labprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2403,12 +2265,6 @@
     </Compile>
     <Compile Include="rad\rad_search.aspx.designer.cs">
       <DependentUpon>rad_search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="External Clinics\session_medR2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>session_medR2.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -3463,38 +3319,6 @@
     <EmbeddedResource Include="CReport\SurgR.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SurgR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\activationR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>activationR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\FrozenR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>FrozenR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\HysteroscopyR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>HysteroscopyR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\IcsiR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>IcsiR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\laparoscopicR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>laparoscopicR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\medicalR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>medicalR.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\oberative_sheetRPT.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>oberative_sheetRPT.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="External Clinics\session_medR2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>session_medR2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reception\session_medR.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

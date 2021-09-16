@@ -131,8 +131,12 @@
                                                     Response.Write(d.Day + "/" + d.Month + "/" + d.Year); %></td>
                                             <%totdoc += double.Parse(item.doc_value.ToString());
                                                 tothos += double.Parse(item.hos_value.ToString());
-                                                totmaint+=double.Parse(item.main_val.ToString());
-                                                totunit+=double.Parse(item.unit_val.ToString());
+                                                if (item.main_val != null)
+                                                {
+                                                    totmaint += double.Parse(item.main_val.ToString());
+                                                }
+
+                                                totunit +=double.Parse(item.unit_val.ToString());
                                                 totals = totdoc + tothos+totmaint+totunit;
 
                                                  %>
